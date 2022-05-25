@@ -1,1 +1,105 @@
 @import url(common.css);
+.main_slide{
+    height: 100vh;
+}
+.slide_wrapper{
+    overflow: hidden;
+    position: relative;
+}
+.slide_container{
+    height: 100%;
+    left: 0;
+    transition: left 0.4s ease-out;
+    display: flex;
+}
+.main_slide li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    justify-content:flex-start;
+}
+.main_slide .container::after{
+    content: '';
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.main_slide .slide1{
+    background-image: url(../img/bg1.png);
+}
+.main_slide .slide2{
+    background-image: url(../img/bg2.png);
+}
+.main_slide .slide3{
+    background-image: url(../img/bg3.png);
+}
+.main_slide .slide4{
+    background-image: url(../img/bg4.jpg);
+}
+.main_slide .slide5{
+    background-image: url(../img/bg5.jpg);
+}
+.main_slide .container{
+    width: 840px;
+    text-align: left;
+    margin: calc(var(--line-height)*6) auto;
+    color: var(--white);
+}
+
+/* SERVICE */
+
+.sevices_list{
+    display: flex;
+    gap: 30px;
+
+}
+.sevices_list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 370px;
+    border: 1px solid #c8c8c8;
+    border-top: 3px solid var(--primary-c);
+    border-bottom: 3px solid var(--secondary-c);
+    box-sizing: border-box;
+    box-shadow:none;
+    transition: 0.4s;
+}
+.sevices_list li:hover{
+    box-shadow: 7px 10px 0 rgba(0, 0, 0, .3);
+}
+.sevices_list .sub_tt{
+    margin: var(--line-height) 0;
+}
+.sevices_list .sub_desc{
+    width: 275px;
+    overflow: hidden;
+}
+.sevices_list li a{
+    margin: 20px 0;
+}
+.sevices_list li span{
+    font-size: 75px;
+    margin-bottom: var(--line-height);
+}
+.works_news li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(var(--line-height)*2);
+}
+.works_news li .desc{
+    width: 565px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+

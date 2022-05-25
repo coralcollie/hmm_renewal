@@ -9,7 +9,7 @@
     --body-fz:1rem;
     --line-height:27px;
     --primary-c:#e21920;
-    --secondary-c:##0c205c;
+    --secondary-c:#0c205c;
     --title-c:#252525;
     --typo-c:#989898;
     --table-primary-c:#eee;
@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: var(--fw-bold);
     line-height: calc(var(--line-height)*2.7);
     text-transform: uppercase;
+    color: var(--white);
 }
 .sub_tt{
     font-size: calc(var(--body-fz)*1.37);
@@ -151,6 +152,8 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     z-index: 0;
     overflow: hidden;
+    display: inline-flex;
+    align-items: center;
 }
 .btn::after{
     content: '';
@@ -272,7 +275,7 @@ header nav ul li a:hover{
     color: #525252;
 }
 footer{
-    height: 525px;
+    height: 346px;
     background: var(--black);
     display: flex;
 }
