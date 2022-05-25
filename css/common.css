@@ -134,24 +134,7 @@ h1,h2,h3,h4,h5,h6{
     color: var(--white);
     margin: var(--line-height) 0;
 }
-.footer_tt{
-    font-size: calc(var(--body-fz)*0.75);
-    font-weight: var(--fw-bold);
-    text-transform: uppercase;
-    color: var(--white);
-}
-.footer_sub_tt{
-    font-size: calc(var(--body-fz)*0.75);
-    font-weight: var(--fw-light);
-    text-transform: uppercase;
-    color: var(--white);
-}
-.footer_info{
-    font-size: calc(var(--body-fz)*0.62);
-    font-weight: var(--fw-light);
-    line-height: calc(var(--line-height)*0.74);
-    text-transform: uppercase;
-}
+
 .primary_color {
     color: var(--primary-c);
 }
@@ -234,4 +217,96 @@ LAYOUT
 }
 .con-top-pd{
     padding-top: calc(var(--line-height)*2);
+}
+header{
+    position: absolute;
+    z-index:1;
+    left: 0;
+    right: 0;
+    padding: 34px 0;
+    transition: 0.3s;
+}
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    gap:60px;
+}
+header nav ul{
+    display: flex;
+    gap:35px;
+}
+.logo a{
+    width: 78px;
+    height: 33px;
+    background: url(../img/logo_wh.png) no-repeat;
+    display: block;
+    text-indent: -9999em;
+}
+header nav ul li a{
+    color: var(--white);
+}
+header nav ul li a:hover{
+    color: var(--primary-c);
+}
+.footer_tt{
+    font-size: calc(var(--body-fz)*0.75);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    color: var(--white);
+}
+.footer_sub_tt{
+    font-size: calc(var(--body-fz)*0.75);
+    font-weight: var(--fw-light);
+    text-transform: uppercase;
+    color: var(--white);
+}
+.footer_info{
+    font-size: calc(var(--body-fz)*0.62);
+    font-weight: var(--fw-light);
+    line-height: calc(var(--line-height)*0.74);
+    text-transform: uppercase;
+    color: #525252;
+}
+footer{
+    height: 525px;
+    background: var(--black);
+    display: flex;
+}
+
+footer .footer_menu img{
+    width: 178px;
+    height: 77px;
+    margin-right: 380px;
+}
+footer .footer_menu{
+    display: flex;
+    padding-bottom: var(--line-height);
+
+}
+footer .footer_menu div>ul{
+    display: flex;
+    gap:41px;
+    white-space: nowrap;
+}
+footer .footer_info{
+    display: flex;
+}
+footer hr{
+    border: 1px solid #fff;
+}
+footer .footer_info div{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+footer .footer_info img{
+    width: 23px;
+    height: 28px;
+}
+footer .material-symbols-rounded{
+    color: var(--white);
 }
