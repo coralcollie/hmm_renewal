@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870.22" height="2" viewBox="0 0 870.22 2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 2px;
+        stroke-dasharray: 0.001 4;
+        fill-rule: evenodd;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <path id="dot_2" data-name="dot 2" class="cls-1" d="M477,3000h869" transform="translate(-476 -2999)"/>
+</svg>

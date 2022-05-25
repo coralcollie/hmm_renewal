@@ -1,0 +1,15 @@
+<svg id="blue_circle" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #0c205c;
+      }
+
+      .cls-1 {
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <circle id="타원_1" data-name="타원 1" class="cls-1" cx="12.5" cy="12.5" r="12.5"/>
+  <circle id="타원_1_복사" data-name="타원 1 복사" class="cls-2" cx="12.5" cy="12.5" r="6.25"/>
+</svg>
