@@ -216,14 +216,14 @@ LAYOUT
     display: none;
 }
 .con-pd{
-    padding: calc(var(--line-height)*3) 0;
+    padding-top: calc(var(--line-height)*3);
 }
 .con-top-pd{
     padding-top: calc(var(--line-height)*2);
 }
 header{
     position: absolute;
-    z-index:1;
+    z-index:999;
     left: 0;
     right: 0;
     padding: 34px 0;

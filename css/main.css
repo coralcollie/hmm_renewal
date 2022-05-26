@@ -18,11 +18,13 @@
     height: 100%;
     background-repeat: no-repeat;
     background-position: center top;
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     justify-content:flex-start;
+    z-index: 1;
 }
-.main_slide .container::after{
+.main_slide .container::before{
     content: '';
     background: rgba(0, 0, 0, .5);
     position: absolute;
@@ -30,6 +32,7 @@
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: -1;
 }
 .main_slide .slide1{
     background-image: url(../img/bg1.png);
@@ -52,6 +55,9 @@
     margin: calc(var(--line-height)*6) auto;
     color: var(--white);
 }
+.main_slide .btns{
+    position: absolute;
+}
 
 /* SERVICE */
 
@@ -63,7 +69,7 @@
 .sevices_list li{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 370px;
     border: 1px solid #c8c8c8;
@@ -73,9 +79,37 @@
     box-shadow:none;
     transition: 0.4s;
 }
+.sevices_list li:nth-child(2) img{
+    transform: scale(0.8) translate(-5px,-5px);
+    transition: 0.4s;
+}
 .sevices_list li:hover{
     box-shadow: 7px 10px 0 rgba(0, 0, 0, .3);
+    transform: translate(-10px,-10px);
 }
+.sevices_list li:nth-child(2):hover img{
+    transform: scale(0.9) translate(-5px,-5px);
+}
+.sevices_list li div{
+    width: 270;
+    height: 190px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sevices_list li div img{
+    width: 90px;
+    margin: 35px 0 70px 0;
+    transition: 0.4s;
+}
+.sevices_list li:hover div img{
+    width: 90px;
+    margin: -160px 0 70px 0;
+    
+}
+
+
 .sevices_list .sub_tt{
     margin: var(--line-height) 0;
 }
@@ -90,6 +124,9 @@
     font-size: 75px;
     margin-bottom: var(--line-height);
 }
+
+/* WORK NEWS */
+
 .works_news li{
     display: flex;
     justify-content: space-between;
@@ -102,10 +139,26 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-.Preliminary_financial_result{
+.Preliminary_financial_result .content{
     background-image: url(../img/graph_bg.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
     height: 270px;
     position: relative;
+}
+
+/* GALLRY */
+
+.gallery ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.gallery_list li{
+    display: flex;
+}
+.gallery ul a{
+    display: none;
 }

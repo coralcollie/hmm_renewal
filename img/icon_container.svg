@@ -1,0 +1,42 @@
+<svg id="icon_출하검사" xmlns="http://www.w3.org/2000/svg" width="63.656" height="63.75" viewBox="0 0 63.656 63.75">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 3px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_8_copy" data-name="Rectangle 8 copy" class="cls-1" x="33.656" y="2.75" width="29" height="31"/>
+  <path class="cls-2" d="M62,709l29-29v31L62,740V709Z" transform="translate(-28.344 -677.25)"/>
+  <path class="cls-3" d="M62,680L31,709" transform="translate(-28.344 -677.25)"/>
+  <rect class="cls-1" x="2.656" y="31.75" width="32" height="31"/>
+  <path class="cls-4" d="M57.1,698.843H45.918v4.122L35.781,695l10.138-7.965v4.122H57.1v7.686Z" transform="translate(-28.344 -677.25)"/>
+  <path class="cls-3" d="M67,714v15" transform="translate(-28.344 -677.25)"/>
+  <path id="Shape_24_copy" data-name="Shape 24 copy" class="cls-3" d="M72,709v15" transform="translate(-28.344 -677.25)"/>
+  <path id="Shape_24_copy_2" data-name="Shape 24 copy 2" class="cls-3" d="M77,704v15" transform="translate(-28.344 -677.25)"/>
+  <path id="Shape_24_copy_3" data-name="Shape 24 copy 3" class="cls-3" d="M82,698v15" transform="translate(-28.344 -677.25)"/>
+  <path id="Shape_24_copy_4" data-name="Shape 24 copy 4" class="cls-3" d="M87,693v15" transform="translate(-28.344 -677.25)"/>
+  <path class="cls-3" d="M38,722l7,7,10-11" transform="translate(-28.344 -677.25)"/>
+</svg>
