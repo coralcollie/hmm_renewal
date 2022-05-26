@@ -102,4 +102,10 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-
+.Preliminary_financial_result{
+    background-image: url(../img/graph_bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 270px;
+    position: relative;
+}
