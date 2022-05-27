@@ -125,12 +125,17 @@
     margin-bottom: var(--line-height);
 }
 
+
+
 /* WORK NEWS */
 
 .works_news li{
     display: flex;
     justify-content: space-between;
     margin-top: calc(var(--line-height)*2);
+}
+.works_news li:nth-child(2n) img{
+    order: 1;
 }
 .works_news li .desc{
     width: 565px;
@@ -139,7 +144,10 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-.Preliminary_financial_result .content{
+
+/* RESULT */
+
+.result .content_wrap{
     background-image: url(../img/graph_bg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -148,6 +156,39 @@
     height: 270px;
     position: relative;
 }
+.result .content_wrap:before{
+    content: '';
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.result .content{
+    position: absolute;
+    width: 980px;
+    height: 200px;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.result .content_sub_part_tt{
+    color: #b6b6b6;
+}
+.upline{
+    display: none;
+}
+.result .graph_line img{
+    margin-bottom: calc(var(--line-height)*2);
+}
+.figure_tt{
+    font-size: 1.87em;
+    color: var(--white);
+    font-weight: var(--bord);
+}
+
+
 
 /* GALLRY */
 
@@ -161,4 +202,36 @@
 }
 .gallery ul a{
     display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATION */
+.content_tt,.content_desc {
+    animation:fadeInUp;
+    animation-duration: 2s; 
+}
+.service>ul li{
+    animation:fadeInUp;
+    animation-duration: 2s; 
+    animation-delay: 0.2s;
 }
