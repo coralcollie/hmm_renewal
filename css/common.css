@@ -154,6 +154,9 @@ h1,h2,h3,h4,h5,h6{
     overflow: hidden;
     display: inline-flex;
     align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+    transition:0.4s;
 }
 .btn::after{
     content: '';
@@ -170,34 +173,46 @@ h1,h2,h3,h4,h5,h6{
 .big.btn{
     height: 44px;
     border: 1px solid var(--black);
-    box-sizing: border-box;
-    padding: 0 20px;
     text-transform: uppercase;
-    transition:0.4s;
-    overflow: hidden; 
     box-shadow:none; 
 }
 .big.icon.btn{
     height: 44px;
     border: 1px solid var(--black);
-    box-sizing: border-box;
-    padding: 0 20px;
     text-transform: uppercase;
     text-align: left;
-    transition:0.4s;
-    overflow: hidden;
     box-shadow:none;  
 }
+.big.btn.slide_btn{
+    height: 44px;
+    border: 0px solid var(--black);
+    text-transform: uppercase;
+    box-shadow:none; 
+    background-color: transparent;
+    color: #fff;
+    gap: 30px;
+}
+.main_slide p{
+    margin: 0 auto;
+    position: absolute;
+    left: 0; right: 0; bottom: calc(var(--line-height)*2.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+}
+/* .main_slide p .quick{
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+} */
 .normal.btn{
     height: 36px;
     border: 1px solid var(--black);
-    box-sizing: border-box;
-    padding: 0 20px;
     white-space: nowrap;
-    transition:0.4s;
     overflow: hidden; 
     box-shadow:none; 
 }
+
 .btn:hover:after{
     box-shadow:inset -3px 0 var(--primary-c);
     left: 0; right: 0;top: 0;bottom: 0;
