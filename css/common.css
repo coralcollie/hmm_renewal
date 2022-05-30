@@ -25,6 +25,7 @@
 /*
 typography
 */
+
 body{
     font-family: var(--body-ff);
     font-size: var(--body-fz);
@@ -101,12 +102,11 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
     text-align: center;
 }
-.result_figure{
-    line-height: calc(var(--line-height)*2);
+.figure_y{
     font-weight: var(--fw-bold);
     color: var(--white);
 }
-.result_year{
+.figure_x{
     font-size: calc(var(--body-fz)*1.18);
     font-weight: var(--fw-bold);
     color: var(--white);
@@ -184,7 +184,7 @@ h1,h2,h3,h4,h5,h6{
     box-shadow:none;  
 }
 .big.btn.slide_btn{
-    height: 44px;
+    height: 75px;
     border: 0px solid var(--black);
     text-transform: uppercase;
     box-shadow:none; 
