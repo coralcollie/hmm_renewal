@@ -312,9 +312,14 @@ footer .footer_menu div>ul{
 }
 footer .footer_info{
     display: flex;
+    justify-content: space-between;
 }
 footer hr{
-    border: 1px solid #fff;
+    width: 100%;
+    height: 1px;
+    background-color: var(--title-c);
+    border: 0px;
+    margin: var(--line-height) 0;
 }
 footer .footer_info div{
     display: flex;
@@ -327,4 +332,15 @@ footer .footer_info img{
 }
 footer .material-symbols-rounded{
     color: var(--white);
+}
+footer select{
+    text-transform: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    background: #000;
+    color: #fff;
+}
+.footer_menu ul li ul li{
+    cursor: pointer;
 }
