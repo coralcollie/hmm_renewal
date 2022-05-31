@@ -137,14 +137,14 @@ window.addEventListener('scroll',()=>{
 
 
 
-// /* -----------filter-------------- */
+/* -----------filter-------------- */
 
-// var mixer = mixitup('.gallery_list',{
-//     "animation": {
-//         "duration": 354,
-//         "nudge": true,
-//         "reverseOut": false,
-//         "effects": "scale(0.04) translateZ(24px)"
-//     }
-// });
+var mixer = mixitup('.gallery_list',{
+    "animation": {
+        "duration": 354,
+        "nudge": true,
+        "reverseOut": false,
+        "effects": "scale(0.04) translateZ(24px)"
+    }
+});
 
