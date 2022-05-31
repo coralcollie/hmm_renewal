@@ -46,7 +46,8 @@ function updatepager(){
     }
     slide[slideCurrentIdx].classList.add('active');
 }
-updatepager();
+// updatepager();
+
 
 pagerBtn.forEach((item,index)=>{
     item.addEventListener('click',(e)=>{
@@ -63,6 +64,7 @@ function autoSlide(){
         moveSlide(nextIdx);
     },4000);
 }
+moveSlide(0);
 
 /* -----------SCROLL ANIMATION-------------- */
 window.addEventListener('scroll',()=>{
@@ -76,22 +78,27 @@ window.addEventListener('scroll',()=>{
         header.classList.remove('active');
     }
     
+    /* -------------service animation-------------- */ 
+    let service = document.querySelector('.service'),
+        serviceUl = service.querySelector('ul')
+        serviceOST = service.offsetTop-737;
 
+    console.log(serviceOST);
+    console.log(winSCT);
+    if(winSCT>=serviceOST){
+        service.classList.add('animate__fadeInUp');
+        serviceUl.classList.add('animate__fadeInUp');
+    }else{
+        service.classList.remove('animate__fadeInUp');
+        serviceUl.classList.remove('animate__fadeInUp');
+    }
+    
     /* -------------Counter animation-------------- */ 
     let counters = document.querySelector('.content_wrap');
     let counterNums = counters.querySelectorAll('.content h3');
     let courtersOST = counters.offsetTop - 700;
     let excuted = false;
 
-    /* -------------service animation-------------- */ 
-    let service = document.querySelector('.service')
-    let serviceOST = service.offsetTop - 900;
-
-    console.log(serviceOST);
-    console.log(winSCT);
-    if(winSCT>300){
-        service.classList.add('animate__fadeInUp');
-    }
 
     if(winSCT>courtersOST){
         if(!excuted){
@@ -117,7 +124,7 @@ window.addEventListener('scroll',()=>{
                         item.innerText =  num;
                         
                     }, speed);                 
-                
+                    
             });
             excuted = true;
         }

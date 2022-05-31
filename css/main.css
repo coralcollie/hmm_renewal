@@ -104,7 +104,7 @@
     height: 3px;
     background: rgba(255, 255, 255, 1);
     z-index: 5;
-    transition: 5s;
+    transition: 4s;
 }
 .pager ul li.active::after{
     right: 0%;
@@ -126,10 +126,12 @@
 
 /* SERVICE */
 
+.service{
+    opacity: 0;
+}
 .sevices_list{
     display: flex;
     gap: 30px;
-
 }
 .sevices_list li{
     display: flex;
@@ -499,6 +501,11 @@ section.gallery{
 
 /* ANIMATION */
 .service.animate__fadeInUp{
-    animation:fadeInUp;
-    animation-duration: 3s; 
+    opacity: 1;
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out;
+}
+.service.animate__fadeInUp ul{
+    animation-duration: 2s;
+    animation-delay: 0.5s;
 }
