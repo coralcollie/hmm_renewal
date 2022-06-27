@@ -126,9 +126,6 @@
 
 /* SERVICE */
 
-.service{
-    opacity: 0;
-}
 .sevices_list{
     display: flex;
     gap: 30px;
@@ -450,17 +447,40 @@ section.gallery{
 }
 /* BANNER */
 
-.banner_slide.slide_wrapper{
+.banner_slide{
     height: calc(var(--line-height)*8);
     background: #101010;
 }
-.banner_slide ul{
+
+.banner_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+.banner_item .banner_content{
+    display: flex;
+    gap: 70px;
+}
+.banner_item .slick-arrow{
+    color: #fff;
+}
+/* .banner_item .slick-arrow{
+    width: var(--con-width);
+    display: flex;
+
+    align-items: center;
+    z-index: 12;
+
+} */
+
+/* .banner_item{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.banner_slide ul li{
+.banner_item div{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -475,11 +495,11 @@ section.gallery{
     justify-content:center;
     align-items: center;
 }
-
 .banner_slide .controls{
     width: var(--con-width);
     display: flex;
     justify-content: space-between;
+    transform: translate(0,50%);
     align-items: center;
     z-index: 12;
 }
@@ -487,6 +507,7 @@ section.gallery{
     font-size: 54px;
     color: rgba(255 , 255, 255, 0.2);
 }
+ */
 
 
 
@@ -500,12 +521,26 @@ section.gallery{
 
 
 /* ANIMATION */
-.service.animate__fadeInUp{
-    opacity: 1;
+.service.animate__animated,.gallery.animate__animated{
     animation-duration: 2s; 
     animation-timing-function: ease-in-out;
+    opacity: 1;
 }
-.service.animate__fadeInUp ul{
-    animation-duration: 2s;
-    animation-delay: 0.5s;
+.service,.result_tit,.works_news li,.result .content_wrap,.gallery{
+    opacity: 0;
+}
+.sevices_list.animate__animated, .works_news li.animate__animated,.gallery_list.animate__animated{
+    opacity: 1;
+    animation-duration: 2.5s; 
+    animation-timing-function: ease-in-out;
+}
+.result_tit.animate__animated{
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+}
+.result .content_wrap.animate__animated{
+    opacity: 1;
+    animation-delay: 1s;
+    animation-duration: 1.5s; 
 }

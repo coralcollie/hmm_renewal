@@ -7,6 +7,7 @@
     <title>HMM Renewal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/fresco.css">
+    <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -97,10 +98,10 @@
         </div>
     </div>
     <main>
-        <section class="service con-pd container animate__animated">
+        <section class="service con-pd container">
             <h2 class="content_tt ">We believe only the best.<br>service</h2>
             <p class="content_desc">Global service network with more than 60 sea routes and over 100 ports of call enables HMM to collaborate more strategically with the world’s major shipping companies.</p>
-            <ul class="sevices_list container animate__animated">
+            <ul class="sevices_list container">
                 <li>
                     <h3 class="sub_tt">container</h3>
                     <div>
@@ -206,13 +207,13 @@
                 </div>
             </div>
         </section>
-        <section class="gallery container con-pd">
+        <section class="gallery container con-pd con-b-pd">
             <h2 class="content_tt">HMM gallery</h2>
             <div class="filter_btn">
-                <button class="mix tab_tt" data-filter="all">all</button>
-                <button class="mix tab_tt" data-filter=".container">container</button>
-                <button class="mix tab_tt" data-filter=".bulk">bulk</button>
-                <button class="mix tab_tt" data-filter=".terminal">terminal</button>
+                <button type="button" class="tab_tt" data-filter="all">all</button>
+                <button type="button" class="tab_tt" data-filter=".container_f">container</button>
+                <button type="button" class="tab_tt" data-filter=".bulk">bulk</button>
+                <button type="button" class="tab_tt" data-filter=".terminal">terminal</button>
             </div>
             <span class="target"></span>
 
@@ -332,38 +333,68 @@
                 </a>
             </p>
         </section>
-        <section class="banner_slide con-pd">
-            <div class="banner_slide slide_wrapper">
-                <ul class="banner_container">
-                    <p class="controls">
-                        <a href="" class="prev material-symbols-rounded">arrow_back_ios</a>
-                        <a href="" class="next material-symbols-rounded">arrow_forward_ios</a>
-                    </p>
-                    <li class="slide1">
-                    <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
-                    <div class="banner_content">
-                        <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
-                        <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
-                        <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
+        <section class="banner_slide">
+            <div class="banner_slide slide_wrapper container">
+                <!-- <p class="controls">
+                    <a href="" class="prev material-symbols-rounded">arrow_back_ios</a>
+                    <a href="" class="next material-symbols-rounded">arrow_forward_ios</a>
+                </p> -->
+                <div class="banner_item">
+                    <div>
+                        <div class="banner_content">
+                            <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
+                            <div>
+                                <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
+                                <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
+                                <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
+                            </div>
+                        </div>
                     </div>
+                    <div>
+                        <div class="banner_content">
+                            <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
+                            <div>
+                                <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
+                                <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
+                                <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="banner_content">
+                            <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
+                            <div>
+                                <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
+                                <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
+                                <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+                <!-- <ul class="banner_container">
+
+                    <li class="slide1">
+
                     </li>
                     <li class="slide2">
-                    <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
-                    <div class="banner_content">
-                        <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
-                        <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
-                        <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
-                    </div>
+                        <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
+                        <div class="banner_content">
+                            <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
+                            <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
+                            <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
+                        </div>
                     </li>
                     <li class="slide3">
-                    <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
-                    <div class="banner_content">
-                        <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
-                        <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
-                        <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
-                    </div>
+                        <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
+                        <div class="banner_content">
+                            <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
+                            <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
+                            <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
+                        </div>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </section>
 </main>
@@ -434,10 +465,12 @@
 <!----------cursor style------------>
 <div id="cursor"></div>
 
-<script src="js/main.js"></script>
-<script src="js/mixitup.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/mixitup.min.js"></script>
 <script src="js/fresco.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFDVK0X24W"></script>

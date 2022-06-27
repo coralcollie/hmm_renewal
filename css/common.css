@@ -41,6 +41,9 @@ div:hover ~ #cursor{
     transform: scale(1.2);
 }
 
+/* *{
+    cursor: none;
+} */
 
 /*
 typography
@@ -255,6 +258,9 @@ LAYOUT
 }
 .con-top-pd{
     padding-top: calc(var(--line-height)*2);
+}
+.con-b-pd{
+    padding-bottom: calc(var(--line-height)*2);
 }
 header{
     position: absolute;
