@@ -63,6 +63,8 @@ function autoSlide(){
 moveSlide(0);
 
 /* -----------SCROLL ANIMATION-------------- */
+let execute = false;
+
 window.addEventListener('scroll',()=>{
 
     /* -------------header animation-------------- */ 
@@ -126,7 +128,7 @@ window.addEventListener('scroll',()=>{
     let counters = document.querySelector('.content_wrap');
     let counterNums = counters.querySelectorAll('.content h3');
     let courtersOST = counters.offsetTop - 700;
-    let execute = false;
+
 
 
     if(winSCT>=courtersOST){

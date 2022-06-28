@@ -277,9 +277,7 @@
 .result .content_sub_part_tt{
     color: #b6b6b6;
 }
-.upline{
-    display: none;
-}
+
 .result .graph_line{
     display: flex;
     flex-direction: column;
