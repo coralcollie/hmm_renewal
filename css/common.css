@@ -173,6 +173,10 @@ h1,h2,h3,h4,h5,h6{
 .w_color{
     color:var(--white);
 }
+.unit{
+    font-size: calc(var(--body-fz)*0.75);
+    float: right;
+}
 
 /* hamburger-button */
 .hamburger-button{
@@ -446,7 +450,7 @@ footer .material-symbols-rounded{
 }
 footer select{
     text-transform: none;
-    font-size: 12px;
+    font-size: calc(var(--body-fz)*0.75);
     text-transform: uppercase;
     padding: 0 20px;
     background: #000;

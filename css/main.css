@@ -595,10 +595,13 @@ section.gallery{
     border-color: inherit;
 }
 
+.table_gray thead th{
+    padding: 30px 40px;
+}
 .table_gray th, .table_gray td{
     border: solid 1px;
     border-color: #989898 #989898 #989898 transparent;
-    padding: 20px 35px;
+    padding: 15px 30px;
     text-align: center;
 }
 .table_gray .border_none{
@@ -615,7 +618,6 @@ section.gallery{
 .table_gray tbody tr:hover{
     background: #eeeeee;
 }
-
-.table_gray thead th{
-    padding: 40px 50px;
+.service_desc p::before{
+    content:'- ';
 }
