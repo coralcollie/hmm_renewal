@@ -382,10 +382,14 @@ a.border_primary.text_white{
     right: 373px;
     top: 28px;
 }
-.upline img{
-      width: 485px;
-      height: 70px;
-      z-index: 999;
+.upline img {
+    width: 473px;
+    height: 70px;
+    z-index: 999;
+    object-fit: cover;
+    position: absolute;
+    top: 42px;
+    left: 100px;
 }
 
 
