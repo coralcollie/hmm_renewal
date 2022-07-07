@@ -550,7 +550,7 @@ section.gallery{
     animation-duration: 1.5s; 
 }
 
-/* service network */
+/* sub page */
 .tit_tab{
     padding-top: calc(var(--line-height)*6);
     display: flex;
@@ -564,6 +564,10 @@ section.gallery{
 .tit_tab .tab ul a{
     font-size: 12px;
     line-height: calc(var(--line-height)*2);
+    color: rgba(0, 0, 0, 0.7);
+}
+.tit_tab .tab ul a:hover{
+    color: rgba(0, 0, 0, 1);
 }
 .tit_tab h1{
     font-size: 53px;
@@ -572,6 +576,16 @@ section.gallery{
     width: 280px;
     height: 110px;
     line-height: 63px;
+}
+.tit_tab.tit_block{
+    display: block;
+}
+.tit_tab.tit_block .tab ul{
+    margin-top: 0;
+}
+.tit_tab.tit_block h1{
+    width: auto;
+    height: auto;
 }
 .network{
     margin-top: calc(var(--line-height)*2);;
@@ -584,7 +598,7 @@ section.gallery{
     height: 190px;
     gap: 30px;
 }
-.content .service_tt{
+.subp_sub_tt{
     font-size: 20px;
     font-weight: var(--fw-bold);
     text-transform: uppercase;
@@ -620,4 +634,25 @@ section.gallery{
 }
 .service_desc p::before{
     content:'- ';
+}
+.space_nowrap{
+    white-space: nowrap;
+}
+.table_gray th.border_left, .table_gray td.border_left{
+    border-color: #989898 transparent #989898 #989898;
+}
+.e-type ul{
+    display: flex;
+    gap: 5px;
+}
+.e-type ul li{
+    border: solid 1px #989898;
+    box-sizing: border-box;
+    padding: 25px 20px;
+}
+.e-type ul li:hover{
+    background: var(--black);
+}
+.e-type ul li:hover a{
+    color: var(--white);
 }
