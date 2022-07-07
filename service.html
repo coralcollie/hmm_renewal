@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>service-HMM Renewal</title>
+    <title>service network-HMM Renewal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/fresco.css">
     <link rel="stylesheet" href="css/slick.css"/>
@@ -23,15 +23,21 @@
                     close
                 </button> -->
                 <ul class="main_menu">
-                    <li><a href="">About HMM</a></li>
-                    <li><a href="">Container</a></li>
-                    <li><a href="">Bulk</a></li>
-                    <li><a href="">IR</a></li>
-                    <li><a href="">Contacts</a></li>
-                    <li><a href="">Local sites</a></li>
+                    <li><a href="" class="border_primary" data-linktext="About HMM">About HMM </a></li>
+                    <li><a href="container.html"class="border_primary" data-linktext="Container">Container</a></li>
+                    <li><a href="" class="border_primary" data-linktext="Bulk">Bulk</a></li>
+                    <li><a href="" class="border_primary" data-linktext="IR">IR</a></li>
+                    <li><a href="" class="border_primary" data-linktext="Contacts">Contacts</a></li>
+                    <li><a href=""class="border_primary"  data-linktext="Local sites">Local sites</a></li>
                 </ul>
                 <ul class="top_links">
-                    <li><a href="" class="material-symbols-rounded">menu</a></li>
+                    <li>
+                        <a href="#" class="hamburger-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -53,7 +59,7 @@
         </div>
     </section>
     <section class="network container">
-        <div class="Asia-NorthAmerica">
+        <div class="network_content Asia-NorthAmerica">
             <ul>
                 <li>
                     <a href="">
@@ -153,7 +159,7 @@
                 </li>
             </ul>
         </div>
-        <div class="Asia-Europe">
+        <div class="network_content Asia-Europe">
             <ul>
                 <li>
                     <a href="">
@@ -205,7 +211,7 @@
                 </li>
             </ul>
         </div>
-        <div class="Intra-Asia">
+        <div class="network_content Intra-Asia">
             <ul>
                 <li>
                     <h2>KI1</h2>
@@ -281,7 +287,7 @@
                 </li>
             </ul>
         </div>
-        <div class="MiddleEast">
+        <div class="network_content MiddleEast">
             <ul>
                 <li>
                     <h2>AG2</h2>
@@ -297,7 +303,7 @@
                 </li>
             </ul>
         </div>
-        <div class="India Sub-Continent	">
+        <div class="network_content India Sub-Continent	">
             <ul>
                 <li>
                     <h2>CIX</h2>
@@ -329,7 +335,7 @@
                 </li>
             </ul>
         </div>
-        <div class="LatinAmerica">
+        <div class="network_content LatinAmerica">
             <ul>
                 <li>
                     <h2>NW1</h2>
@@ -349,7 +355,7 @@
                 </li>
             </ul>
         </div>
-        <div class="Eastern-Russia">
+        <div class="network_content Eastern-Russia">
             <ul>
                 <li>
                     <h2>CRN</h2>
@@ -365,7 +371,7 @@
                 </li>
             </ul>
         </div>
-        <div class="Oceania">
+        <div class="network_content Oceania">
             <ul>
                 <li>
                     <h2>A1X</h2>
@@ -374,14 +380,14 @@
             </ul>
         </div>
     </section>
-    <section class="content">
+    <section class="content container">
         <div>
-            <h4>PN1 Pacific North 1</h4>
+            <h4 class="service_tt con-pd">PN1 Pacific North 1</h4>
             <img src="img/pn1.jpg" alt="Pacific North 1 (PN1)">
         </div>
         <div>
-            <h4>Port Rotation and Schedule</h4>
-            <table>
+            <h4 class="service_tt con-pd con-top-pd">Port Rotation and Schedule</h4>
+            <table class="table_gray">
                 <thead>
                     <tr>
                         <th scope="col">Calling Port</th>
@@ -533,6 +539,12 @@
             <span>- Ports where HMM does not provide service will not be displayed in port rotation and transit time</span>
         </div>
     </section>
-    
+
+    <!----------script------------>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/fresco.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

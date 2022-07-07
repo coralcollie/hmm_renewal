@@ -5,13 +5,19 @@
 let cursor = document.getElementById("cursor");
 
 document.onmousemove = function(e){
-    cursor.style.left = (e.pageX) + "px";
-    cursor.style.top = (e.pageY)+ "px";
+    cursor.style.left = (e.pageX+15) + "px";
+    cursor.style.top = (e.pageY+15)+ "px";
     cursor.style.display = "block";
 
 }
 
+/* -----------hamburger-------------- */
+let hamburger = document.querySelector(".hamburger-button");
 
+hamburger.addEventListener('click',function(e){
+  e.preventDefault;
+  this.classList.toggle('click');
+});
 
 /* -----------slide style-------------- */
 let mainslideWrapper = document.querySelector('.main_slide'),
@@ -180,5 +186,8 @@ var mixer = mixitup('.gallery_list',{
 
 /* -----------banner slide-------------- */
 $('.banner_item').slick({
-
+    autoplay: true,
+    autoplaySpeed: 4000,
 });
+
+$('.network_content').slick();
