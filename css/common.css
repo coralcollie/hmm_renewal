@@ -43,6 +43,7 @@ div:hover ~ #cursor{
     transform: scale(1.2);
 }
 
+
 /* *{
     cursor: none;
 } */
@@ -304,6 +305,7 @@ h1,h2,h3,h4,h5,h6{
 .btn:hover:after{
     box-shadow:inset -3px 0 var(--primary-c);
     left: 0; right: 0;top: 0;bottom: 0;
+    box-sizing: border-box;
 }
 .btn:hover{
     color: var(--white);
@@ -456,6 +458,4 @@ footer select{
     background: #000;
     color: #fff;
 }
-.footer_menu *{
-    cursor: pointer;
-}
+

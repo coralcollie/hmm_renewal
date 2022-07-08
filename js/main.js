@@ -190,4 +190,9 @@ $('.banner_item').slick({
     autoplaySpeed: 4000,
 });
 
-$('.network_content').slick();
+/* -----------Service Network-------------- */
+let network = document.querySelector(".network"),
+    networkContent = network.querySelector(".network_content"),
+    target = document.querySelector(".tab ul a");
+
+
