@@ -20,7 +20,7 @@ hamburger.addEventListener('click',function(e){
 });
 
 
-/* -----------Sub page-------------- */
+/* -----------tab highlight animation-------------- */
 let tabTarget = document.querySelector('.tab .target'),
     links = document.querySelectorAll('.tab li a');
 
@@ -48,7 +48,8 @@ let mainslideWrapper = document.querySelector('.main_slide'),
     slideCurrentIdx = 0,
     mainPager = document.querySelector('.pager'),
     timer = '',
-    pagerBtn = mainPager.querySelectorAll('a');
+    pagerBtn = mainPager.querySelectorAll('a'),
+    progress = mainPager.querySelector('.progress')
 
 
 mainslideUl.style.width = `${slideCount*100}%`;
@@ -69,6 +70,11 @@ function updatepager(){
         timebar.classList.remove('active');
     }
     slide[slideCurrentIdx].classList.add('active');
+    if(!progress.classList.contains('active')){
+        progress.classList.add('active');
+    }else{
+        progress.classList.remove('active');
+    }
 }
 
 
