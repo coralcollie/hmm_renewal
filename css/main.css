@@ -540,7 +540,7 @@ section.gallery{
     gap: 27px;
 }
 .tit_tab .tab ul a{
-    font-size: 12px;
+    font-size: 13px;
     line-height: calc(var(--line-height)*2);
     color: rgba(0, 0, 0, 0.7);
 }
@@ -564,6 +564,11 @@ section.gallery{
 .tit_tab.tit_block h1{
     width: auto;
     height: auto;
+}
+.tab .target{
+    position: absolute;
+    border-bottom: 3px solid #000;
+    transition: 0.4s;
 }
 .network{
     margin-top: calc(var(--line-height)*2);;
@@ -626,7 +631,7 @@ section.gallery{
 }
 .e-type ul li a{
     border: solid 1px #989898;
-    box-sizing: borde   r-box;
+    box-sizing: border-box;
     padding: 25px 20px;
 }
 .e-type ul li:hover a{

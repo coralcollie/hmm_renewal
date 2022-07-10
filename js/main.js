@@ -19,6 +19,27 @@ hamburger.addEventListener('click',function(e){
   this.classList.toggle('click');
 });
 
+
+/* -----------Sub page-------------- */
+let tabTarget = document.querySelector('.tab .target'),
+    links = document.querySelectorAll('.tab li a');
+
+links.forEach((item)=>{
+    item.addEventListener('mouseenter',mouseEnterFunc);
+});
+
+function mouseEnterFunc(){
+    let width = this.getBoundingClientRect().width;
+    let height = this.getBoundingClientRect().height+10;
+    let left = this.getBoundingClientRect().left;
+    let top = this.getBoundingClientRect().top + height;
+
+    tabTarget.style.width = `${width}px`;
+    tabTarget.style.left = `${left}px`;
+    tabTarget.style.top = `${top}px`;  
+    links.style.color = rgba(0, 0, 0, 1); 
+}
+
 /* -----------slide style-------------- */
 let mainslideWrapper = document.querySelector('.main_slide'),
     mainslideUl = document.querySelector('.slide_container'),
@@ -26,6 +47,7 @@ let mainslideWrapper = document.querySelector('.main_slide'),
     slideCount = slide.length,
     slideCurrentIdx = 0,
     mainPager = document.querySelector('.pager'),
+    timer = '',
     pagerBtn = mainPager.querySelectorAll('a');
 
 
@@ -48,7 +70,7 @@ function updatepager(){
     }
     slide[slideCurrentIdx].classList.add('active');
 }
-// updatepager();
+
 
 
 pagerBtn.forEach((item,index)=>{
@@ -67,6 +89,14 @@ function autoSlide(){
     },4000);
 }
 moveSlide(0);
+autoSlide();
+
+mainslideWrapper.addEventListener('mouseenter',()=>{
+    clearInterval(timer);
+});
+mainslideWrapper.addEventListener('mouseleave',()=>{
+    autoSlide();
+});
 
 /* -----------SCROLL ANIMATION-------------- */
 let execute = false;
@@ -173,6 +203,8 @@ window.addEventListener('scroll',()=>{
 
 
 
+
+
 /* -----------filter-------------- */
 
 var mixer = mixitup('.gallery_list',{
@@ -191,8 +223,8 @@ $('.banner_item').slick({
 });
 
 /* -----------Service Network-------------- */
-let network = document.querySelector(".network"),
-    networkContent = network.querySelector(".network_content"),
-    target = document.querySelector(".tab ul a");
+// let network = document.querySelector(".network"),
+//     networkContent = network.querySelector(".network_content"),
+//     target = document.querySelector(".tab ul a");
 
 
