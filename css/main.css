@@ -680,6 +680,7 @@ section.gallery{
     width: 871px;
     height: 325px;
     perspective: 8000px;
+    margin-left: 100px;
 }
 .box{
     width: 871px;
@@ -693,6 +694,7 @@ section.gallery{
     position: absolute;
     top: 0;
     left: 0;
+    text-indent: -999em;
 }
 .box_face--front {
     background: url(../img/container_front.jpg) no-repeat;
@@ -707,10 +709,10 @@ section.gallery{
     background: url(../img/container_right.jpg) no-repeat;
 }
 .box_face--top {
-    background: url(../img/container_right.jpg) no-repeat;
+    background: url(../img/container_top.jpg) no-repeat;
 }
 .box_face--bottom {
-    background: url(../img/container_right.jpg) no-repeat;
+    background: url(../img/container_top.jpg) no-repeat;
 }
 
 .box_face--front,
@@ -720,7 +722,7 @@ section.gallery{
 }
 .box_face--right,
 .box_face--left{
-    width: 293px;
+    width: 325px;
     height: 325px;
 }
 .box_face--top,
@@ -729,14 +731,14 @@ section.gallery{
     height: 325px;
     top: 50px;
 }
-.box_face--front  { transform: rotateY(  0deg) translateZ( 160px); }
-.box_face--back   { transform: rotateY(180deg) translateZ( 0px); }
+.box_face--front  { transform: rotateY(  0deg) translateZ( 162px); }
+.box_face--back   { transform: rotateY(180deg) translateZ( 161px); }
 
-.box_face--right  { transform: rotateY( 90deg) translateZ(725px); }
-.box_face--left   { transform: rotateY(-90deg) translateZ(725px); }
+.box_face--right  { transform: rotateY( 90deg) translateZ(707px); }
+.box_face--left   { transform: rotateY(-90deg) translateZ(160px); }
 
-.box_face--top    { transform: rotateX( 90deg) translateZ(112px); }
-.box_face--bottom { transform: rotateX(-90deg) translateZ(112px); }
+.box_face--top    { transform: rotateX( 90deg) translateZ(211px); }
+.box_face--bottom { transform: rotateX(-90deg) translateZ(111px); }
 
 .box.show-auto  {animation:rotate 10s infinite linear;}
 .box.show-front  { transform: translateZ( -50px) rotateY(   0deg); }
@@ -750,10 +752,8 @@ section.gallery{
 	0% {transform:rotateY(0deg); }
 	100% {transform:rotateY(360deg); }
 }
-.radio-group{
-    margin-top: 500px;
-}
-label { margin-right: 30px; }
+
+label { margin-left: 30px; }
 
 /*---------- ANIMATION ----------*/
 .gallery_list.animate__animated,.result_tit.animate__animated,.result .content_wrap.animate__animated,.service.animate__animated,.sevices_list.animate__animated,.gallery.animate__animated{
