@@ -73,12 +73,40 @@
             </ul>
         </div>
         <div class="container con-pd">
-            <img class="container_img" src="" alt="3D회전 이미지 들어갈 자리">
-            <ul class="preview">
-                <li><img src="" alt="미리보기 이미지"></li>
-                <li><img src="" alt="미리보기 이미지"></li>
-                <li><img src="" alt="미리보기 이미지"></li>
-            </ul>
+            <div class="scene">
+                <div class="box">
+                    <div class="box_face box_face--front">front</div>
+                    <div class="box_face box_face--back">back</div>
+                    <div class="box_face box_face--right">right</div>
+                    <div class="box_face box_face--left">left</div>
+                    <div class="box_face box_face--top">top</div>
+                    <div class="box_face box_face--bottom">bottom</div>
+                </div>
+            </div>
+            <p class="radio-group con-top-pd">
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="auto" checked /> auto
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="front" checked /> front
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="right" /> right
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="back" /> back
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="left" /> left
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="top" /> top
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+                </label>
+              </p>
+
         </div>
         <table class="table_gray">
             <thead>

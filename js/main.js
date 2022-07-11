@@ -26,6 +26,9 @@ let tabTarget = document.querySelector('.tab .target'),
 
 links.forEach((item)=>{
     item.addEventListener('mouseenter',mouseEnterFunc);
+    item.addEventListener('click',()=>{
+        links[item].style.color = rgba(0, 0, 0, 1); 
+    })
 });
 
 function mouseEnterFunc(){
@@ -39,6 +42,54 @@ function mouseEnterFunc(){
     tabTarget.style.top = `${top}px`;  
     links.style.color = rgba(0, 0, 0, 1); 
 }
+/* -----------service network tab-------------- */
+$(document).ready(function(){
+    $('.network_content').slick({
+        "slidesToShow": 6, "slidesToScroll": 6
+    });
+  });
+
+
+let tabMenu = document.querySelectorAll('.tab li'),
+    // tabHref = tabMenu.querySelector('a').getAttribute('href'),
+    network = document.querySelectorAll('.network div');
+
+// console.log(tabHref);
+tabMenu.forEach(function(item, index){
+    item.addEventListener('click',function(e){
+        e.preventDefault();
+
+        network.forEach(function(item){
+            item.classList.remove('active');
+        });
+        // network.contains(tabHref).classList.add('active');
+        // network[index].classList.add('active');
+
+
+    });
+});
+
+/* -----------container 3d cube-------------- */
+let box = document.querySelector('.box'),
+    radioGroup = document.querySelector('.radio-group'),
+    currentClass = '';
+
+function changeSide(){
+    let checkedRadio = radioGroup.querySelector(':checked');
+    let showClass = 'show-' + checkedRadio.value;
+    if(currentClass){
+        box.classList.remove(currentClass);
+    }
+    box.classList.add(showClass);
+    currentClass = showClass;
+}
+changeSide();
+radioGroup.addEventListener('change', changeSide);
+
+
+
+
+
 
 /* -----------slide style-------------- */
 let mainslideWrapper = document.querySelector('.main_slide'),
@@ -227,10 +278,4 @@ $('.banner_item').slick({
     autoplay: true,
     autoplaySpeed: 4000,
 });
-
-/* -----------Service Network-------------- */
-// let network = document.querySelector(".network"),
-//     networkContent = network.querySelector(".network_content"),
-//     target = document.querySelector(".tab ul a");
-
 
