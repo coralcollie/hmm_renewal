@@ -49,25 +49,24 @@ $(document).ready(function(){
     });
   });
 
-
-let tabMenu = document.querySelectorAll('.tab li'),
-    // tabHref = tabMenu.querySelector('a').getAttribute('href'),
-    network = document.querySelectorAll('.network div');
-
-// console.log(tabHref);
-tabMenu.forEach(function(item, index){
-    item.addEventListener('click',function(e){
-        e.preventDefault();
-
-        network.forEach(function(item){
-            item.classList.remove('active');
-        });
-        // network.contains(tabHref).classList.add('active');
-        // network[index].classList.add('active');
-
-
-    });
-});
+  if(document.querySelectorAll('.network_tab').length){
+      let tabMenu = document.querySelectorAll('.tab li'),
+          // tabHref = tabMenu.querySelector('a').getAttribute('href'),
+          network = document.querySelectorAll('.network div');
+      
+      // console.log(tabHref);
+      tabMenu.forEach(function(item, index){
+          item.addEventListener('click',function(e){
+              e.preventDefault();
+              let tabHref = tabMenu.querySelector('a').getAttribute('href');
+              network.forEach(function(item){
+                  item.classList.remove('active');
+              });
+              document.querySelector(tabHref).classList.add('active');
+      
+          });
+      });
+  }
 
 /* -----------container 3d box-------------- */
 if(document.querySelectorAll('.equipment_tab').length){
@@ -76,18 +75,28 @@ if(document.querySelectorAll('.equipment_tab').length){
         currentClass = '',
         tabMenu = document.querySelectorAll('.equipment_tab li a');
 
-    tabMenu.forEach(function(item, index){
+
+    tabMenu.forEach(function(item){
         item.addEventListener('click', function(e){
             e.preventDefault();
 
             tabMenu.forEach(function(item){
                 item.classList.remove('active');
             });
-            tabMenu[index].classList.add('active');
+            this.classList.add('active');
+            
+            let tabContent = document.querySelector('.equipment_content');
+            let tabHref = this.getAttribute('href');
+            console.log(tabHref);
 
-            activeContent();
+            tabContent.forEach(function(item){
+                item.classList.remove('active');
+            });
+            document.querySelector(tabHref).classList.add('active');
+            
         });
     });
+    
 
     function changeSide(){
         let checkedRadio = radioGroup.querySelector(':checked');
