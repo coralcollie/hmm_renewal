@@ -62,17 +62,22 @@
             <span class="target"></span>
         </div>
     </section>
-    <section class="equipment container con-b-pd con-top-pd">
+    <section class="equipment_tab container con-b-pd con-top-pd">
         <div class="e-type">
             <h4 class="subp_sub_tt">equipment</h4>
             <ul class="con-pd">
-                <li><a href="">Dry Containers </a></li>
-                <li><a href="">Refrigerated Containers</a></li>
+                <li><a class="active" href="#dryContainers">Dry Containers </a></li>
+                <li><a href="#RFContainers">Refrigerated Containers</a></li>
                 <li><a href="">Specialized Containers</a></li>
                 <li><a href="">Container Management</a></li>
             </ul>
         </div>
-        <div class="container con-pd">
+    </section>
+    <section class="container con-b-pd" id="tab-content">
+
+    </section>
+    <section class="container con-b-pd" id="dryContainers">
+        <div class="3d_box container con-pd">
             <div class="scene">
                 <div class="box">
                     <div class="box_face box_face--front">front</div>
@@ -85,7 +90,120 @@
             </div>
             <p class="radio-group con-top-pd">
                 <label>
-                  <input type="radio" name="rotate-cube-side" value="auto" checked /> auto
+                  <input type="radio" name="rotate-cube-side" value="auto" /> auto
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="front" checked /> front
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="right" /> right
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="back" /> back
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="left" /> left
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="top" /> top
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+                </label>
+              </p>
+
+        </div>
+        <table class="table_gray">
+            <thead>
+                <tr>
+                    <td scope="col" class="space_nowrap" rowspan="2">Size & Type</td>
+                    <td scope="col" rowspan="2">Height</td>
+                    <td scope="col" rowspan="2">Tare<br>(kgs)</td>
+                    <td scope="col" rowspan="2">Payload(kgs)</td>
+                    <td scope="col" rowspan="2">Max.Gross </td>
+                    <td scope="col" colspan="2">Door Opening (mm)</td>
+                    <td scope="col" colspan="3">Interior Dimension (mm)</td>
+                    <td scope="col" class="border_left" rowspan="2">Interior<br>Cubic<br>(㎥)</td>
+                </tr>
+                <tr>
+                    <td scope="col">Width</td>
+                    <td scope="col">Height</td>
+                    <td scope="col">Length</td>
+                    <td scope="col">Height</td>
+                    <td scope="col">Width</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="space_nowrap">20' DRY CNTRS</th>
+                    <td>8'6''</td>
+                    <td>2,200</td>
+                    <td>28,280</td>
+                    <td>30,480</td>
+                    <td>2,340</td>
+                    <td>2,280</td>
+                    <td>5,898</td>
+                    <td>2,392</td>
+                    <td>2,352</td>
+                    <td class="border_none">33.2</td>
+                </tr>
+                <tr>
+                    <th class="space_nowrap">40' DRY CNTRS</th>
+                    <td>8'6''</td>
+                    <td>3,600</td>
+                    <td>28,900</td>
+                    <td>32,500</td>
+                    <td>2,340</td>
+                    <td>2,280</td>
+                    <td>12,032</td>
+                    <td>2,392</td>
+                    <td>2,352</td>
+                    <td class="border_none">33.2</td>
+                </tr>
+                <tr>
+                    <th class="space_nowrap">4H' DRY CNTRS</th>
+                    <td>9'6''</td>
+                    <td>3,800</td>
+                    <td>28,700</td>
+                    <td>32,500</td>
+                    <td>2,340</td>
+                    <td>2,585</td>
+                    <td>12,032</td>
+                    <td>2,698</td>
+                    <td>2,352</td>
+                    <td class="border_none">76.3</td>
+                </tr>
+                <tr>
+                    <th class="space_nowrap">45' DRY CNTRS</th>
+                    <td>9'6''</td>
+                    <td>4,570</td>
+                    <td>27,930</td>
+                    <td>32,500</td>
+                    <td>2,340</td>
+                    <td>2,585</td>
+                    <td>13,557</td>
+                    <td>2,698</td>
+                    <td>2,352</td>
+                    <td class="border_none">85.9</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="container con-b-pd" id="RFContainers">
+        <div class="3d_box container con-pd">
+            <div class="scene">
+                <div class="box">
+                    <div class="box_face box_face--front">front</div>
+                    <div class="box_face box_face--back">back</div>
+                    <div class="box_face box_face--right">right</div>
+                    <div class="box_face box_face--left">left</div>
+                    <div class="box_face box_face--top">top</div>
+                    <div class="box_face box_face--bottom">bottom</div>
+                </div>
+            </div>
+            <p class="radio-group con-top-pd">
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="auto" /> auto
                 </label>
                 <label>
                   <input type="radio" name="rotate-cube-side" value="front" checked /> front

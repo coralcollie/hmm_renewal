@@ -69,22 +69,49 @@ tabMenu.forEach(function(item, index){
     });
 });
 
-/* -----------container 3d cube-------------- */
-let box = document.querySelector('.box'),
-    radioGroup = document.querySelector('.radio-group'),
-    currentClass = '';
+/* -----------container 3d box-------------- */
+if(document.querySelectorAll('.equipment_tab').length){
+    let box = document.querySelector('.box'),
+        radioGroup = document.querySelector('.radio-group'),
+        currentClass = '',
+        tabMenu = document.querySelectorAll('.equipment_tab li a'),
+        tabContent = document.querySelector('#tab-content');
 
-function changeSide(){
-    let checkedRadio = radioGroup.querySelector(':checked');
-    let showClass = 'show-' + checkedRadio.value;
-    if(currentClass){
-        box.classList.remove(currentClass);
+    tabMenu.forEach(function(item, index){
+        item.addEventListener('click', function(e){
+            e.preventDefault();
+
+            tabMenu.forEach(function(item){
+                item.classList.remove('active');
+            });
+            tabMenu[index].classList.add('active');
+
+            activeContent();
+        });
+    });
+
+    function activeContent(){
+        let activeMenu = document.querySelector('.equipment_tab li.active');
+        let targetContent = document.querySelector('#dryContainers').innerHTML;
+        tabContent.innerHTML = targetContent;
     }
-    box.classList.add(showClass);
-    currentClass = showClass;
+    activeContent();
+
+    if(document.querySelectorAll('.tab-content').length){
+        function changeSide(){
+            let checkedRadio = radioGroup.querySelector(':checked');
+            let showClass = 'show-' + checkedRadio.value;
+            if(currentClass){
+                box.classList.remove(currentClass);
+            }
+            box.classList.add(showClass);
+            currentClass = showClass;
+        }
+        changeSide();
+        radioGroup.addEventListener('change', changeSide);
+    }
 }
-changeSide();
-radioGroup.addEventListener('change', changeSide);
+
 
 
 
