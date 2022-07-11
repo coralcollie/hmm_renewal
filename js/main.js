@@ -74,8 +74,7 @@ if(document.querySelectorAll('.equipment_tab').length){
     let box = document.querySelector('.box'),
         radioGroup = document.querySelector('.radio-group'),
         currentClass = '',
-        tabMenu = document.querySelectorAll('.equipment_tab li a'),
-        tabContent = document.querySelector('#tab-content');
+        tabMenu = document.querySelectorAll('.equipment_tab li a');
 
     tabMenu.forEach(function(item, index){
         item.addEventListener('click', function(e){
@@ -90,26 +89,18 @@ if(document.querySelectorAll('.equipment_tab').length){
         });
     });
 
-    function activeContent(){
-        let activeMenu = document.querySelector('.equipment_tab li.active');
-        let targetContent = document.querySelector('#dryContainers').innerHTML;
-        tabContent.innerHTML = targetContent;
-    }
-    activeContent();
-
-    if(document.querySelectorAll('.tab-content').length){
-        function changeSide(){
-            let checkedRadio = radioGroup.querySelector(':checked');
-            let showClass = 'show-' + checkedRadio.value;
-            if(currentClass){
-                box.classList.remove(currentClass);
-            }
-            box.classList.add(showClass);
-            currentClass = showClass;
+    function changeSide(){
+        let checkedRadio = radioGroup.querySelector(':checked');
+        let showClass = 'show-' + checkedRadio.value;
+        if(currentClass){
+            box.classList.remove(currentClass);
         }
-        changeSide();
-        radioGroup.addEventListener('change', changeSide);
+        box.classList.add(showClass);
+        currentClass = showClass;
     }
+    changeSide();
+    radioGroup.addEventListener('change', changeSide);
+
 }
 
 
