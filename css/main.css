@@ -491,7 +491,7 @@ section.gallery{
 .gallery_list li:hover a:hover{
     color: var(--primary-c)
 }
-/*---------- BANNER ----------*/
+/*---------- slick slide style ----------*/
 
 .banner_slide{
     padding: var(--line-height) 0;
@@ -530,7 +530,37 @@ section.gallery{
 }
 .slick-next.slick-arrow:hover{
     background: url(../img/arrow_forward_hover.svg) no-repeat;
+} /* 메인 하단 배너 스타일 */
+
+.network_content.active .slick-arrow,.network_content.active .slick-arrow:hover{
+    width: 35px;
+    height: 35px;
+    text-indent: -999em;
+    overflow: hidden;
+    position: absolute;
+    z-index: 50;
+    top: 100%;
+    margin: var(--line-height);
 }
+.network_content.active  button.slick-prev.slick-arrow{
+    background: url(../img/arrow_prev.svg) no-repeat;
+    background-size: cover;
+    left: 43%;
+}
+.network_content.active  button.slick-prev.slick-arrow:hover{
+    background: url(../img/arrow_prev_hover.svg) no-repeat;
+    background-size: cover;
+}
+.network_content.active  button.slick-next.slick-arrow{
+    background: url(../img/arrow_next.svg) no-repeat;
+    background-size: cover;
+    right: 43%;
+}
+.network_content.active  button.slick-next.slick-arrow:hover{
+    background: url(../img/arrow_next_hover.svg) no-repeat;
+    background-size: cover;
+} /* service network 슬라이드 스타일 */
+
 
 
 

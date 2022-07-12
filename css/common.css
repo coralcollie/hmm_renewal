@@ -44,13 +44,8 @@ div:hover ~ #cursor{
 }
 
 
-/* *{
-    cursor: none;
-} */
 
-/*
-typography
-*/
+/* ---------typography---------- */
 
 body{
     font-family: var(--body-ff);
@@ -178,14 +173,18 @@ h1,h2,h3,h4,h5,h6{
     font-size: calc(var(--body-fz)*0.75);
     float: right;
 }
+.top_links .account{
+    color: var(--white);
+    cursor: pointer;
+}
 
-/* hamburger-button */
+/* ---------hamburger-button---------- */
 .hamburger-button{
     display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
-    top: 14px;
+    top: 11px;
     right: 0;
 	width: 24px;
 	height: 24px;
@@ -231,7 +230,7 @@ h1,h2,h3,h4,h5,h6{
   .click span:nth-child(3){
     transform: rotate(-45deg) scaleX(1);
     transform-origin: left center;
-  }
+  } 
 
   /* button */
 .btn{
@@ -340,18 +339,21 @@ header{
     padding: 34px 0;
     transition: 0.3s;
 }
-header > div{
+header div{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header nav{
-    display: flex;
-    gap:60px;
-}
-header nav ul{
+header .main_menu{
     display: flex;
     gap:35px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-25%);
+}
+header .top_links{
+    display: flex;
+    gap:20px;
 }
 .logo a{
     width: 78px;
@@ -360,10 +362,13 @@ header nav ul{
     display: block;
     text-indent: -9999em;
 }
-header nav ul li a{
+header nav a{
     color: var(--white);
 }
-header nav ul li a:hover{
+header nav a:hover{
+    color: var(--primary-c);
+}
+header .top_links button:hover{
     color: var(--primary-c);
 }
 header.active{
@@ -373,7 +378,7 @@ header.active{
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
-header.active nav ul li a{
+header.active nav li a,header.active .top_links button{
     color:var(--black);
 }
 header.active .hamburger-button span{
@@ -381,6 +386,9 @@ header.active .hamburger-button span{
 }
 header.active nav ul li a:hover{
     color:var(--primary-c);
+}
+header.active .top_links button:hover{
+    color: var(--primary-c);
 }
 .active .logo a{
     background-image: url(../img/logo.png);

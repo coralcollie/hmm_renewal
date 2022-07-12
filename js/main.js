@@ -164,6 +164,11 @@ function moveSlide(num){
     mainslideUl.style.left = `${num*-100}%`;
     slideCurrentIdx = num;
     updatepager();
+    progress.classList.add('active');
+    setTimeout(()=>{
+        progress.classList.remove('active');
+    },3900);
+
 }
 
 function updatepager(){
@@ -176,12 +181,6 @@ function updatepager(){
         timebar.classList.remove('active');
     }
     slide[slideCurrentIdx].classList.add('active');
-
-    if(!progress.classList.contains('active')){
-        progress.classList.add('active');
-    }else{
-        progress.classList.remove('active');
-    }
 }
 
 
