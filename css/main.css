@@ -547,9 +547,12 @@ section.gallery{
 .tit_tab .tab ul a{
     font-size: 13px;
     line-height: calc(var(--line-height)*2);
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.6);
 }
 .tit_tab .tab ul a:hover{
+    color: rgba(0, 0, 0, 1);
+}
+.tit_tab .tab ul a.active{
     color: rgba(0, 0, 0, 1);
 }
 .tit_tab h1{
@@ -701,7 +704,7 @@ section.gallery{
     position: absolute;
     top: 0;
     left: 0;
-    text-indent: -999em;
+    color: rgba(0, 0, 0, 0);
 }
 /* dry container image */
 #dryContainers .box_face--front {

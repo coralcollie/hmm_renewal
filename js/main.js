@@ -27,7 +27,10 @@ let tabTarget = document.querySelector('.tab .target'),
 links.forEach((item)=>{
     item.addEventListener('mouseenter',mouseEnterFunc);
     item.addEventListener('click',()=>{
-        links[item].style.color = rgba(0, 0, 0, 1); 
+        links.forEach(function(item){
+            item.addEventListener.classList.remove('active');
+        });
+        this.addEventListener.classList.add('active');
     })
 });
 
@@ -40,39 +43,60 @@ function mouseEnterFunc(){
     tabTarget.style.width = `${width}px`;
     tabTarget.style.left = `${left}px`;
     tabTarget.style.top = `${top}px`;  
-    links.style.color = rgba(0, 0, 0, 1); 
 }
 /* -----------service network tab-------------- */
+
 $(document).ready(function(){
     $('.network_content').slick({
         "slidesToShow": 6, "slidesToScroll": 6
     });
-  });
+});
 
-  if(document.querySelectorAll('.network_tab').length){
-      let tabMenu = document.querySelectorAll('.tab li'),
-          // tabHref = tabMenu.querySelector('a').getAttribute('href'),
-          network = document.querySelectorAll('.network div');
-      
-      // console.log(tabHref);
-      tabMenu.forEach(function(item, index){
-          item.addEventListener('click',function(e){
-              e.preventDefault();
-              let tabHref = tabMenu.querySelector('a').getAttribute('href');
-              network.forEach(function(item){
-                  item.classList.remove('active');
-              });
-              document.querySelector(tabHref).classList.add('active');
-      
-          });
-      });
-  }
+if(document.querySelectorAll('.network_tab').length){
+    let tabMenu = document.querySelectorAll('.tab li'),
+        network = document.querySelectorAll('.network_content'),
+        contentTab = document.querySelectorAll('.network_content div'),
+        networkDesc = document.querySelectorAll('.network_desc');
+    
+    tabMenu.forEach(function(item){
+        item.addEventListener('click',function(e){
+            e.preventDefault();
+            tabMenu.forEach(function(item){
+                item.querySelector('a').classList.remove('active');
+            })
+            this.querySelector('a').classList.add('active');
+            
+            
+            let tabHref = this.querySelector('a').getAttribute('href');
+            //console.log(tabHref);
+            network.forEach(function(item){
+                item.classList.remove('active');
+            });
+            document.querySelector(tabHref).classList.add('active');
+        });
+    });
+    contentTab.forEach(function(item){
+        item.addEventListener('click',function(e){
+            e.preventDefault();
+            let contentTabHref = this.querySelector('a').getAttribute('href');
+            networkDesc.forEach(function(item){
+                item.classList.remove('active');
+            });
+            document.querySelector(contentTabHref).classList.add('active');
+
+        });
+    });
+
+
+}
+
+
 
 /* -----------container 3d box-------------- */
 if(document.querySelectorAll('.equipment_tab').length){
     let box = document.querySelector('.box'),
-        radioGroup = document.querySelector('.radio-group'),
         currentClass = '',
+        radioGroup = document.querySelectorAll('.active .radio-group input');
         tabMenu = document.querySelectorAll('.equipment_tab li a');
 
 
@@ -85,7 +109,7 @@ if(document.querySelectorAll('.equipment_tab').length){
             });
             this.classList.add('active');
             
-            let tabContent = document.querySelector('.equipment_content');
+            let tabContent = document.querySelectorAll('.equipment_content');
             let tabHref = this.getAttribute('href');
             console.log(tabHref);
 
@@ -93,13 +117,15 @@ if(document.querySelectorAll('.equipment_tab').length){
                 item.classList.remove('active');
             });
             document.querySelector(tabHref).classList.add('active');
-            
+            radioGroup = document.querySelector('.active .radio-group input:checked');
+            console.log(radioGroup);
         });
     });
     
 
     function changeSide(){
-        let checkedRadio = radioGroup.querySelector(':checked');
+        let checkedRadio = radioGroup.value;
+
         let showClass = 'show-' + checkedRadio.value;
         if(currentClass){
             box.classList.remove(currentClass);
@@ -108,7 +134,8 @@ if(document.querySelectorAll('.equipment_tab').length){
         currentClass = showClass;
     }
     changeSide();
-    radioGroup.addEventListener('change', changeSide);
+    let target = document.querySelector('.active .radio-group input');
+    target.addEventListener('change', changeSide);
 
 }
 
