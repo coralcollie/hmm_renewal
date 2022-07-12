@@ -26,11 +26,11 @@ let tabTarget = document.querySelector('.tab .target'),
 
 links.forEach((item)=>{
     item.addEventListener('mouseenter',mouseEnterFunc);
-    item.addEventListener('click',()=>{
+    item.addEventListener('click',(e)=>{
         links.forEach(function(item){
             item.addEventListener.classList.remove('active');
         });
-        this.addEventListener.classList.add('active');
+        e.target.addEventListener.classList.add('active');
     })
 });
 
@@ -46,8 +46,8 @@ function mouseEnterFunc(){
 }
 /* -----------service network tab-------------- */
 
-$(document).ready(function(){
-    $('.network_content').slick({
+$(document).ready(function(){ //슬릭 초기 실행
+    $('.network_content.active').slick({
         "slidesToShow": 6, "slidesToScroll": 6
     });
 });
@@ -73,12 +73,17 @@ if(document.querySelectorAll('.network_tab').length){
                 item.classList.remove('active');
             });
             document.querySelector(tabHref).classList.add('active');
+            
+            $('.network_content.active').slick({
+                "slidesToShow": 6, "slidesToScroll": 6
+            });
         });
     });
+    
     contentTab.forEach(function(item){
         item.addEventListener('click',function(e){
             e.preventDefault();
-            let contentTabHref = this.querySelector('a').getAttribute('href');
+            let contentTabHref = this.querySelector('a').getAttribute('href'); //클릭한 그 요소안에 a의 href 값 저장 
             networkDesc.forEach(function(item){
                 item.classList.remove('active');
             });
@@ -95,12 +100,12 @@ if(document.querySelectorAll('.network_tab').length){
 /* -----------container 3d box-------------- */
 if(document.querySelectorAll('.equipment_tab').length){
     let box = document.querySelector('.box'),
+        radioGroup = document.querySelector('.radio-group'),
         currentClass = '',
-        radioGroup = document.querySelectorAll('.active .radio-group input');
-        tabMenu = document.querySelectorAll('.equipment_tab li a');
+        tabMenu = document.querySelectorAll('.equipment_tab li a'),
+        tabContent = document.querySelector('#tab-content');
 
-
-    tabMenu.forEach(function(item){
+    tabMenu.forEach(function(item, index){
         item.addEventListener('click', function(e){
             e.preventDefault();
 
@@ -108,7 +113,7 @@ if(document.querySelectorAll('.equipment_tab').length){
                 item.classList.remove('active');
             });
             this.classList.add('active');
-            
+
             let tabContent = document.querySelectorAll('.equipment_content');
             let tabHref = this.getAttribute('href');
             console.log(tabHref);
@@ -117,15 +122,11 @@ if(document.querySelectorAll('.equipment_tab').length){
                 item.classList.remove('active');
             });
             document.querySelector(tabHref).classList.add('active');
-            radioGroup = document.querySelector('.active .radio-group input:checked');
-            console.log(radioGroup);
         });
     });
     
-
     function changeSide(){
-        let checkedRadio = radioGroup.value;
-
+        let checkedRadio = radioGroup.querySelector(':checked');
         let showClass = 'show-' + checkedRadio.value;
         if(currentClass){
             box.classList.remove(currentClass);
@@ -134,10 +135,10 @@ if(document.querySelectorAll('.equipment_tab').length){
         currentClass = showClass;
     }
     changeSide();
-    let target = document.querySelector('.active .radio-group input');
-    target.addEventListener('change', changeSide);
+    radioGroup.addEventListener('change', changeSide);
 
 }
+
 
 
 
@@ -175,6 +176,7 @@ function updatepager(){
         timebar.classList.remove('active');
     }
     slide[slideCurrentIdx].classList.add('active');
+
     if(!progress.classList.contains('active')){
         progress.classList.add('active');
     }else{
@@ -207,7 +209,7 @@ mainslideWrapper.addEventListener('mouseenter',()=>{
 });
 mainslideWrapper.addEventListener('mouseleave',()=>{
     autoSlide();
-});
+});//slide style
 
 /* -----------SCROLL ANIMATION-------------- */
 let execute = false;

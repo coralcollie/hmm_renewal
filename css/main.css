@@ -45,6 +45,7 @@ a.border_primary.text_white{
 }
 .slide_wrapper{
     position: relative;
+    overflow: hidden;
 }
 .slide_container{
     height: 100%;
@@ -139,10 +140,10 @@ a.border_primary.text_white{
     height: 3px;
     background: var(--white);
     z-index: 5;
-    transition: 4s;
 }
 .pager .progress.active{
     width: 100%;
+    transition: 4s;
 }
 .pager ul li.active::after{
     right: 0%;
