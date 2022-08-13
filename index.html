@@ -1,468 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HMM Renewal</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/fresco.css">
-    <link rel="stylesheet" href="css/slick.css"/>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/fresco.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <h1 class="logo"><a href="index.html">HMM</a></h1>
-            <nav>
-                <ul class="main_menu">
-                    <li><a href="" class="border_primary" data-linktext="About HMM">About HMM </a></li>
-                    <li><a href="container.html"class="border_primary" data-linktext="Container">Container</a></li>
-                    <li><a href="service.html" class="border_primary" data-linktext="Service">Service</a></li>
-                    <li><a href="" class="border_primary" data-linktext="IR">IR</a></li>
-                    <li><a href="" class="border_primary" data-linktext="Contacts">Contacts</a></li>
-                    <li><a href=""class="border_primary"  data-linktext="Local sites">Local sites</a></li>
-                </ul>
-            </nav>
-            <ul class="top_links">
-                <li>
-                    <button type="button" class="material-symbols-outlined account">account_circle</button>
-                </li>
-                <li>
-                    <button href="#" class="hamburger-button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <h1 class="logo"><a href="index.html">HMM</a></h1>
+        <nav>
+          <ul class="main_menu">
+            <li>
+              <a href="" class="border_primary" data-linktext="About HMM"
+                >About HMM
+              </a>
+            </li>
+            <li>
+              <a
+                href="container.html"
+                class="border_primary"
+                data-linktext="Container"
+                >Container</a
+              >
+            </li>
+            <li>
+              <a
+                href="service.html"
+                class="border_primary"
+                data-linktext="Service"
+                >Service</a
+              >
+            </li>
+            <li><a href="" class="border_primary" data-linktext="IR">IR</a></li>
+            <li>
+              <a href="" class="border_primary" data-linktext="Contacts"
+                >Contacts</a
+              >
+            </li>
+            <li>
+              <a href="" class="border_primary" data-linktext="Local sites"
+                >Local sites</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="top_links">
+          <li>
+            <form action="#">
+              <div class="container">
+                <button type="submit" class="btn-search on">
+                  <span class="material-symbols-rounded font_icon">search</span>
+                </button>
+                <label for="top_search" class="hidden">search keyword</label>
+                <input
+                  type="text"
+                  id="top_search"
+                  name="q"
+                  class="input-search active"
+                  placeholder="Search keyword"
+                  autocomplete="on"
+                />
+                <button type="button" class="btn_close on">
+                  <span class="material-symbols-rounded font_icon">close</span>
+                </button>
+              </div>
+            </form>
+          </li>
+          <li>
+            <button type="button" class="btn_account">
+              <span class="material-symbols-rounded font_icon"
+                >account_circle</span
+              >
+            </button>
+          </li>
+          <li>
+            <button href="#" class="hamburger-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </li>
+        </ul>
+      </div>
     </header>
+    <div class="toggle_menu hidden">
+      <div class=""></div>
+    </div>
     <div class="main_slide slide_wrapper">
-        <ul class="slide_container">
-            <li class="slide1">
-                <div class="container">
-                    <h2 class="main_tt animate__animated">2022 CEO Inaugural Address</h2>
-                </div>
-            </li>
-            <li class="slide2">
-                <div class="container">
-                    <h2 class="main_tt animate__animated">Nominate Kyung-bae Kim for new CEO</h2>
-                </div>
-            </li>
-            <li class="slide3">
-                <div class="container">
-                    <h2 class="main_tt animate__animated">THE Alliance announces service  network adjustments for 2022</h2>
-                </div>
-            </li>
-            <li class="slide4">
-                <div class="container">
-                    <h2 class="main_tt animate__animated">HMM achieves record profit for 2021</h2>
-                </div>
-            </li>
-            <li class="slide5">
-                <div class="container">
-                    <h2 class="main_tt animate__animated">HMM completes the first trial use of biofuel</h2>
-                </div>
-            </li>
-        </ul>        
-        <p class="btns container">
-            <a href="" class="big  btn slide_btn">BK / BL</a>
-            <a href="" class="big  btn slide_btn">Container</a>
-            <a href="" class="big icon btn slide_btn">Booking
-                <span class="material-symbols-rounded">search</span>
-            </a>
-            <a href="service.html" class="big icon btn slide_btn">hmm full service
-                <span class="material-symbols-rounded">call_made</span>
-            </a>
-        </p>
-        <div class="pager container">
-            <ul>
-                <li>
-                    <h3><a href="" >29 March 2022</a></h3>
-                </li>
-                <li>
-                    <h3><a href="" >14 March 2022</a></h3>
-                </li>
-                <li>
-                    <h3><a href="" >15 February 2022</a></h3>
-                </li>
-                <li>
-                    <h3><a href="" >14 February 2022</a></h3>
-                </li>
-                <li>
-                    <h3><a href="" >20 December 2021</a></h3>
-                </li>
-            </ul>
-            <span class="progress"></span>
-        </div>
-        <div class="wave">
-            <img src="img/wave.svg" alt="">
-        </div>
+      <ul class="slide_container">
+        <li class="slide1">
+          <div class="container">
+            <h2 class="main_tt animate__animated">
+              2022 CEO Inaugural Address
+            </h2>
+          </div>
+        </li>
+        <li class="slide2">
+          <div class="container">
+            <h2 class="main_tt animate__animated">
+              Nominate Kyung-bae Kim for new CEO
+            </h2>
+          </div>
+        </li>
+        <li class="slide3">
+          <div class="container">
+            <h2 class="main_tt animate__animated">
+              THE Alliance announces service network adjustments for 2022
+            </h2>
+          </div>
+        </li>
+        <li class="slide4">
+          <div class="container">
+            <h2 class="main_tt animate__animated">
+              HMM achieves record profit for 2021
+            </h2>
+          </div>
+        </li>
+        <li class="slide5">
+          <div class="container">
+            <h2 class="main_tt animate__animated">
+              HMM completes the first trial use of biofuel
+            </h2>
+          </div>
+        </li>
+      </ul>
+      <p class="btns container">
+        <a href="" class="big btn slide_btn">BK / BL</a>
+        <a href="" class="big btn slide_btn">Container</a>
+        <a href="" class="big icon btn slide_btn"
+          >Booking
+          <span class="material-symbols-rounded">search</span>
+        </a>
+        <a href="service.html" class="big icon btn slide_btn"
+          >hmm full service
+          <span class="material-symbols-rounded">call_made</span>
+        </a>
+      </p>
+      <div class="pager container">
+        <ul>
+          <li>
+            <h3><a href="">29 March 2022</a></h3>
+          </li>
+          <li>
+            <h3><a href="">14 March 2022</a></h3>
+          </li>
+          <li>
+            <h3><a href="">15 February 2022</a></h3>
+          </li>
+          <li>
+            <h3><a href="">14 February 2022</a></h3>
+          </li>
+          <li>
+            <h3><a href="">20 December 2021</a></h3>
+          </li>
+        </ul>
+        <span class="progress"></span>
+      </div>
+      <div class="wave">
+        <img src="img/wave.svg" alt="" />
+      </div>
     </div>
     <main>
-        <section class="service con-top-big-pd container">
-            <h2 class="content_tt ">We believe only the best.<br>service</h2>
-            <p class="content_desc">Global service network with more than 60 sea routes and over 100 ports of call enables HMM to collaborate more strategically with the world’s major shipping companies.</p>
-            <ul class="sevices_list container">
-                <li>
-                    <h3 class="sub_tt">container</h3>
-                    <div>
-                        <img src="img/icon_container.svg" alt="container">
-                        <p class="sub_desc">Since its inception in 1976, HMM has continuously endeavored to become a premier global shipping and logistics company. HMM is currently one of the top five Trans-Pacific carriers and one of the top 10 carriers in the global shipping industry with..</p>
-                    </div>
-                    <a href="container.html" class="normal btn">Read More</a>
-                </li>
-                <li>
-                    <h3 class="sub_tt">service network</h3>
-                    <img src="img/global_map.svg" alt="service network">
-                    <a href="service.html" class="normal btn">Read More</a>
-                </li>
-                <li>
-                    <h3 class="sub_tt">crude tankker</h3>
-                    <span class="material-symbols-rounded">directions_boat</span>
-                    <p class="sub_desc">Providing world's premier service
-                        with the best competitiveness in the industry as the spearhead in HMM's naissance.</p>
-                    <a href="" class="normal btn">Read More</a>
-                </li>
-            </ul>
-        </section>
-        <section class="works_news container con-top-big-pd">
-            <ul class="news">
-                <li>
-                    <div class="img_wrap">
-                        <img src="img/works_news_img1.png" alt="">
-                    </div>
-                    <div class="desc">
-                        <h4 class="content_sub_part_tt">HMM Works</h4>
-                        <h3 class="content_sub_tt">Who we are</h3>
-                        <h5 class="content_sub_part_desc">We believe only the best. </h5>
-                        <p class="content_sub_desc">Global service network with more than 60 sea routes and over 100 ports of call enables HMM to collaborate more strategically with the world’s major shipping companies. Global service network with more than 60 sea routes and over 100 ports of call enables HMM to collaborate more strategically with the world’s major shipping companies.</p>
-                        <a href="" class="normal btn">Read More</a>    
-                    </div>
-                </li>
-                <li>
-                    <div class="img_wrap">
-                        <img src="img/works_news_img2.png" alt="">
-                    </div>
-                    <div class="desc">
-                        <h4 class="content_sub_part_tt">HMM Works</h4>
-                        <h3 class="content_sub_tt">Our commodities</h3>
-                        <h5 class="content_sub_part_desc">We believe only the best.</h5>
-                        <p class="content_sub_desc">Global service network with more than 60 sea routes and over 100 ports of call enables HMM to collaborate more strategically with the world’s major shipping companies. Global service network with more than 60 sea routes and over 100 ports of call enables HMM to collaborate more strategically with the world’s major shipping companies.</p>
-                        <a href="" class="normal btn">Read More</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="img_wrap">
-                        <img src="img/works_news_img3.png" alt="">
-                    </div>
-                    <div class="desc">
-                        <h4 class="content_sub_part_tt">Latest NEWs</h4>
-                        <h3 class="content_sub_tt">We believe only the best. </h3>
-                        <h5 class="content_sub_part_desc">2022/03/29</h5>
-                        <p class="content_sub_desc">Global service network with more than 60 sea routes and over 100 ports of call enables HMM to collaborate more strategically with the world’s major shipping companies. Global service network with more than 60 sea routes and over 100 ports of call enables HMM to collaborate more strategically with the world’s major shipping companies.</p>
-                        <a href="" class="normal btn">Read More</a>
-                    </div> 
-                </li>
-            </ul>
-        </section>
-        <section class="result ">
-            <div class="result_tit con-top-big-pd">
-                <h2 class="content_tt">Preliminary financial result</h2>
-                <p class="content_desc">HMM achieves record profit for 2021(Consolidated)</p>
-            </div>
-            <div class="content_wrap">
-                <div class="content">
-                    <div class="figure figure_2020">
-                        <h3 class="figure_tt" data-target="6413">0</h3>
-                        <span class="counter_tt">KRW billion</span>
-                    </div>
-                    <div class="figure figure_2021">
-                        <h3 class="figure_tt" data-target="13794">0</h3>
-                        <span class="counter_tt">KRW billion</span>
-                    </div>
-                    <div class="graph_info">
-                        <h4 class="content_sub_part_tt">We believe only the best.</h4>
-                        <div class="figure_y_wraper">
-                            <h4 class="figure_y">12, 000</h4>
-                            <h4 class="figure_y">6, 000</h4>
-                            <h4 class="figure_y">KRW billion</h4>
-                        </div>
-                        <div class="figure_x_wraper">
-                            <h4 class="figure_x">2020</h4>
-                            <h4 class="figure_x">2021</h4>
-                        </div>
-                    </div>
-                    <div class="upline">
-                        <img src="img/dot_gap.svg" alt="">
-                    </div>
-                    <div class="graph_line">
-                        <img src="img/dot_line_gray.svg" alt="">
-                        <img src="img/dot_line_gray.svg" alt="">
-                        <img src="img/line.svg" alt="">
-                    </div>
-                    <div class="graph_circle">
-                        <img src="img/blue_circle.svg" alt="">
-                        <img src="img/red_circle.svg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section class="gallery container con-top-big-pd con-b-pd">
-            <h2 class="content_tt">HMM gallery</h2>
-            
-            <div class="filter_btn">
-                <button type="button" class="tab_tt" data-filter="all">all</button>
-                <button type="button" class="tab_tt" data-filter=".container_f">container</button>
-                <button type="button" class="tab_tt" data-filter=".bulk">bulk</button>
-                <button type="button" class="tab_tt" data-filter=".terminal">terminal</button>
-            </div>
-            <span class="target"></span>
-
-            <ul class="gallery_list">
-                <li class="mix container_f">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_1.png" alt="">
-                        <a href="img/gallery_list_1_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="container_f">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix container_f">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_2.png" alt="">
-                        <a href="img/gallery_list_2_1.png"class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="container_f">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix terminal">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_3.png" alt="">
-                        <a href="img/gallery_list_3_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="terminal">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix terminal">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_4.png" alt="">
-                        <a href="img/gallery_list_4_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="terminal">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix container_f">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_5.png" alt="">
-                        <a href="img/gallery_list_5_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="container_f">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix container_f">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_6.png" alt="">
-                        <a href="img/gallery_list_6_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="container_f">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix container_f">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_7.png" alt="">
-                        <a href="img/gallery_list_7_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="container_f">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix container_f">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_8.png" alt="">
-                        <a href="img/gallery_list_8_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="container_f">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix terminal">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_9.png" alt="">
-                        <a href="img/gallery_list_9_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="terminal">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix terminal">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_10.png" alt="">
-                        <a href="img/gallery_list_10_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="terminal">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix terminal">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_11.png" alt="">
-                        <a href="img/gallery_list_11_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="terminal">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-                <li class="mix bulk">
-                    <div class="img_wrap">
-                        <img src="img/gallery_list_12.png" alt="">
-                        <a href="img/gallery_list_12_1.png" class="material-symbols-rounded fresco" data-fresco-caption="HMM Algeciras HPNT" data-fresco-group="bulk">zoom_in</a>
-                    </div>
-                    <div class="caption">
-                        <h3 class="caption_tt">HMM Algeciras HPNT</h3>
-                    </div>
-                </li>
-            </ul>
-            <p class="more_link">
-                <a href="" class="big btn">Read More
-                    <span class="material-symbols-rounded">arrow_right_alt</span>
-                </a>
-            </p>
-        </section>
-        <section class="banner_slide">
-            <div class="slide_wrapper container">
-
-                <div class="banner_item">
-                    <div>
-                        <div class="banner_content">
-                            <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
-                            <div>
-                                <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
-                                <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
-                                <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="banner_content">
-                            <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
-                            <div>
-                                <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
-                                <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
-                                <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="banner_content">
-                            <img src="img/gold_prize.png" alt="ecovadis 수상 이미지">
-                            <div>
-                                <img src="img/ecovadis_logo.png" alt="ecovadis 로고">
-                                <h3 class="banner_tt">HMM, international sustainability<br> management evaluation <em>2022 'GOLD'</em> RATING</h3>
-                                <h4 class="banner_desc">Upgraded from ‘Silver’ last year for the first time in a year… High ratings in all areas</h4>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-
-            </div>
-        </section>
-</main>
- <footer>
-     <div class="container con-top-pd ">
-         <div class="footer_menu">
-             <img src="img/logo_footer.png" alt="hmm로고">
-             <div>
-                 <ul>
-                     <li>
-                         <h3 class="footer_tt">contents</h3>
-                         <ul class="footer_sub_tt">
-                             <li><a href="" class="border_primary text_white" data-linktext="office list">office list</a></li>
-                             <li><a href="" class="border_primary text_white" data-linktext="eBiz Contact Point">eBiz Contact Point</a></li>
-                             <li><a href="" class="border_primary text_white" data-linktext="eBiz Guide">eBiz Guide</a></li>
-                             <li><a href="faq.html" class="border_primary text_white" data-linktext="Q&A">Q&A</a></li>
-                         </ul>
-                     </li>
-                     <li>
-                         <h3 class="footer_tt">FAQ</h3>
-                         <ul class="footer_sub_tt">
-                             <li><a href="faq.html" class="border_primary text_white" data-linktext="faq">faq</a></li>
-                             <li><a href="" class="border_primary text_white" data-linktext="eBiz Contact Point">eBiz Contact Point</a></li>
-                             <li><a href="" class="border_primary text_white" data-linktext="eBiz Guide">eBiz Guide</a></li>
-                             <li><a href="faq.html" class="border_primary text_white" data-linktext="Q&A">Q&A</a></li>
-                         </ul>
-                     </li>
-                     <li>
-                         <h3 class="footer_tt">contents</h3>
-                         <ul class="footer_sub_tt">
-                             <li><a href="" class="border_primary text_white" data-linktext="office list">office list</a></li>
-                             <li><a href="" class="border_primary text_white" data-linktext="eBiz Contact Point">eBiz Contact Point</a></li>
-                             <li><a href="" class="border_primary text_white" data-linktext="eBiz Guide">eBiz Guide</a></li>
-                             <li><a href="faq.html" class="border_primary text_white" data-linktext="Q&A">Q&A</a></li>
-                         </ul>
-                     </li>
-                     <li>
-                         <h3 class="footer_tt">contents</h3>
-                         <ul class="footer_sub_tt">
-                             <li><a href="" class="border_primary text_white" data-linktext="office list">office list</a></li>
-                             <li><a href="" class="border_primary text_white" data-linktext="eBiz Contact Point">eBiz Contact Point</a></li>
-                             <li><a href="" class="border_primary text_white" data-linktext="eBiz Guide">eBiz Guide</a></li>
-                             <li><a href="faq.html" class="border_primary text_white" data-linktext="Q&A">Q&A</a></li>
-                         </ul>
-                     </li>
-
-                 </ul>
-             </div>
-         </div>
-         <hr>
-         <div class="footer_info">
-            <p>194 Yulgok-ro, Jongro-gu, Seoul, Korea Postal Code : 03127<br>
-                ⓒ 2022 Coral collie All Rights Reserved.</p>
-            
+      <section class="service con-top-big-pd container">
+        <h2 class="content_tt">We believe only the best.<br />service</h2>
+        <p class="content_desc">
+          Global service network with more than 60 sea routes and over 100 ports
+          of call enables HMM to collaborate more strategically with the world’s
+          major shipping companies.
+        </p>
+        <ul class="sevices_list container">
+          <li>
+            <h3 class="sub_tt">container</h3>
             <div>
-                <select name="affilia_site" id="affilia_site">
-                    <option selected="selected">affilia site</option>
-                    <option value="http://www.uswut.com">Washington United Terminals(WUT)</option>
-                    <option value="http://www.uicd.co.kr">의왕ICD</option>
-                    <option value="http://www.hpnt.co.kr">Hyundai Pusan New-Port Terminal (HPNT)</option>
-                </select>
-                <a href=""><span class="material-symbols-rounded">android</span></a>
-                <a href=""><img src="img/apple_logo.png" alt="apple 다운로드"></a>
+              <img src="img/icon_container.svg" alt="container" />
+              <p class="sub_desc">
+                Since its inception in 1976, HMM has continuously endeavored to
+                become a premier global shipping and logistics company. HMM is
+                currently one of the top five Trans-Pacific carriers and one of
+                the top 10 carriers in the global shipping industry with..
+              </p>
             </div>
-        </div>     
-    </div>
-</footer>
+            <a href="container.html" class="normal btn">Read More</a>
+          </li>
+          <li>
+            <h3 class="sub_tt">service network</h3>
+            <img src="img/global_map.svg" alt="service network" />
+            <a href="service.html" class="normal btn">Read More</a>
+          </li>
+          <li>
+            <h3 class="sub_tt">crude tankker</h3>
+            <span class="material-symbols-rounded">directions_boat</span>
+            <p class="sub_desc">
+              Providing world's premier service with the best competitiveness in
+              the industry as the spearhead in HMM's naissance.
+            </p>
+            <a href="" class="normal btn">Read More</a>
+          </li>
+        </ul>
+      </section>
+      <section class="works_news container con-top-big-pd">
+        <ul class="news">
+          <li>
+            <div class="img_wrap">
+              <img src="img/works_news_img1.png" alt="" />
+            </div>
+            <div class="desc">
+              <h4 class="content_sub_part_tt">HMM Works</h4>
+              <h3 class="content_sub_tt">Who we are</h3>
+              <h5 class="content_sub_part_desc">We believe only the best.</h5>
+              <p class="content_sub_desc">
+                Global service network with more than 60 sea routes and over 100
+                ports of call enables HMM to collaborate more strategically with
+                the world’s major shipping companies. Global service network
+                with more than 60 sea routes and over 100 ports of call enables
+                HMM to collaborate more strategically with the world’s major
+                shipping companies.
+              </p>
+              <a href="" class="normal btn">Read More</a>
+            </div>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="img/works_news_img2.png" alt="" />
+            </div>
+            <div class="desc">
+              <h4 class="content_sub_part_tt">HMM Works</h4>
+              <h3 class="content_sub_tt">Our commodities</h3>
+              <h5 class="content_sub_part_desc">We believe only the best.</h5>
+              <p class="content_sub_desc">
+                Global service network with more than 60 sea routes and over 100
+                ports of call enables HMM to collaborate more strategically with
+                the world’s major shipping companies. Global service network
+                with more than 60 sea routes and over 100 ports of call enables
+                HMM to collaborate more strategically with the world’s major
+                shipping companies.
+              </p>
+              <a href="" class="normal btn">Read More</a>
+            </div>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="img/works_news_img3.png" alt="" />
+            </div>
+            <div class="desc">
+              <h4 class="content_sub_part_tt">Latest NEWs</h4>
+              <h3 class="content_sub_tt">We believe only the best.</h3>
+              <h5 class="content_sub_part_desc">2022/03/29</h5>
+              <p class="content_sub_desc">
+                Global service network with more than 60 sea routes and over 100
+                ports of call enables HMM to collaborate more strategically with
+                the world’s major shipping companies. Global service network
+                with more than 60 sea routes and over 100 ports of call enables
+                HMM to collaborate more strategically with the world’s major
+                shipping companies.
+              </p>
+              <a href="" class="normal btn">Read More</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="result">
+        <div class="result_tit con-top-big-pd">
+          <h2 class="content_tt">Preliminary financial result</h2>
+          <p class="content_desc">
+            HMM achieves record profit for 2021(Consolidated)
+          </p>
+        </div>
+        <div class="content_wrap">
+          <div class="content">
+            <div class="figure figure_2020">
+              <h3 class="figure_tt" data-target="6413">0</h3>
+              <span class="counter_tt">KRW billion</span>
+            </div>
+            <div class="figure figure_2021">
+              <h3 class="figure_tt" data-target="13794">0</h3>
+              <span class="counter_tt">KRW billion</span>
+            </div>
+            <div class="graph_info">
+              <h4 class="content_sub_part_tt">We believe only the best.</h4>
+              <div class="figure_y_wraper">
+                <h4 class="figure_y">12, 000</h4>
+                <h4 class="figure_y">6, 000</h4>
+                <h4 class="figure_y">KRW billion</h4>
+              </div>
+              <div class="figure_x_wraper">
+                <h4 class="figure_x">2020</h4>
+                <h4 class="figure_x">2021</h4>
+              </div>
+            </div>
+            <div class="upline">
+              <img src="img/dot_gap.svg" alt="" />
+            </div>
+            <div class="graph_line">
+              <img src="img/dot_line_gray.svg" alt="" />
+              <img src="img/dot_line_gray.svg" alt="" />
+              <img src="img/line.svg" alt="" />
+            </div>
+            <div class="graph_circle">
+              <img src="img/blue_circle.svg" alt="" />
+              <img src="img/red_circle.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery container con-top-big-pd con-b-pd">
+        <h2 class="content_tt">HMM gallery</h2>
 
-<!----------cursor style------------>
-<div id="cursor"></div>
+        <div class="filter_btn">
+          <button type="button" class="tab_tt" data-filter="all">all</button>
+          <button type="button" class="tab_tt" data-filter=".container_f">
+            container
+          </button>
+          <button type="button" class="tab_tt" data-filter=".bulk">bulk</button>
+          <button type="button" class="tab_tt" data-filter=".terminal">
+            terminal
+          </button>
+        </div>
+        <span class="target"></span>
 
-<!----------script------------>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="js/mixitup.min.js"></script>
-<script src="js/fresco.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/main.js"></script>
+        <ul class="gallery_list">
+          <li class="mix container_f">
+            <div class="img_wrap">
+              <img src="img/gallery_list_1.png" alt="" />
+              <a
+                href="img/gallery_list_1_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="container_f"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix container_f">
+            <div class="img_wrap">
+              <img src="img/gallery_list_2.png" alt="" />
+              <a
+                href="img/gallery_list_2_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="container_f"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix terminal">
+            <div class="img_wrap">
+              <img src="img/gallery_list_3.png" alt="" />
+              <a
+                href="img/gallery_list_3_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="terminal"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix terminal">
+            <div class="img_wrap">
+              <img src="img/gallery_list_4.png" alt="" />
+              <a
+                href="img/gallery_list_4_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="terminal"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix container_f">
+            <div class="img_wrap">
+              <img src="img/gallery_list_5.png" alt="" />
+              <a
+                href="img/gallery_list_5_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="container_f"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix container_f">
+            <div class="img_wrap">
+              <img src="img/gallery_list_6.png" alt="" />
+              <a
+                href="img/gallery_list_6_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="container_f"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix container_f">
+            <div class="img_wrap">
+              <img src="img/gallery_list_7.png" alt="" />
+              <a
+                href="img/gallery_list_7_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="container_f"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix container_f">
+            <div class="img_wrap">
+              <img src="img/gallery_list_8.png" alt="" />
+              <a
+                href="img/gallery_list_8_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="container_f"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix terminal">
+            <div class="img_wrap">
+              <img src="img/gallery_list_9.png" alt="" />
+              <a
+                href="img/gallery_list_9_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="terminal"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix terminal">
+            <div class="img_wrap">
+              <img src="img/gallery_list_10.png" alt="" />
+              <a
+                href="img/gallery_list_10_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="terminal"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix terminal">
+            <div class="img_wrap">
+              <img src="img/gallery_list_11.png" alt="" />
+              <a
+                href="img/gallery_list_11_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="terminal"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+          <li class="mix bulk">
+            <div class="img_wrap">
+              <img src="img/gallery_list_12.png" alt="" />
+              <a
+                href="img/gallery_list_12_1.png"
+                class="material-symbols-rounded fresco"
+                data-fresco-caption="HMM Algeciras HPNT"
+                data-fresco-group="bulk"
+                >zoom_in</a
+              >
+            </div>
+            <div class="caption">
+              <h3 class="caption_tt">HMM Algeciras HPNT</h3>
+            </div>
+          </li>
+        </ul>
+        <p class="more_link">
+          <a href="" class="big btn"
+            >Read More
+            <span class="material-symbols-rounded">arrow_right_alt</span>
+          </a>
+        </p>
+      </section>
+      <section class="banner_slide">
+        <div class="slide_wrapper container">
+          <div class="banner_item">
+            <div>
+              <div class="banner_content">
+                <img src="img/gold_prize.png" alt="ecovadis 수상 이미지" />
+                <div>
+                  <img src="img/ecovadis_logo.png" alt="ecovadis 로고" />
+                  <h3 class="banner_tt">
+                    HMM, international sustainability<br />
+                    management evaluation <em>2022 'GOLD'</em> RATING
+                  </h3>
+                  <h4 class="banner_desc">
+                    Upgraded from ‘Silver’ last year for the first time in a
+                    year… High ratings in all areas
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="banner_content">
+                <img src="img/gold_prize.png" alt="ecovadis 수상 이미지" />
+                <div>
+                  <img src="img/ecovadis_logo.png" alt="ecovadis 로고" />
+                  <h3 class="banner_tt">
+                    HMM, international sustainability<br />
+                    management evaluation <em>2022 'GOLD'</em> RATING
+                  </h3>
+                  <h4 class="banner_desc">
+                    Upgraded from ‘Silver’ last year for the first time in a
+                    year… High ratings in all areas
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="banner_content">
+                <img src="img/gold_prize.png" alt="ecovadis 수상 이미지" />
+                <div>
+                  <img src="img/ecovadis_logo.png" alt="ecovadis 로고" />
+                  <h3 class="banner_tt">
+                    HMM, international sustainability<br />
+                    management evaluation <em>2022 'GOLD'</em> RATING
+                  </h3>
+                  <h4 class="banner_desc">
+                    Upgraded from ‘Silver’ last year for the first time in a
+                    year… High ratings in all areas
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container con-top-pd">
+        <div class="footer_menu">
+          <img src="img/logo_footer.png" alt="hmm로고" />
+          <div>
+            <ul>
+              <li>
+                <h3 class="footer_tt">contents</h3>
+                <ul class="footer_sub_tt">
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="office list"
+                      >office list</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="eBiz Contact Point"
+                      >eBiz Contact Point</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="eBiz Guide"
+                      >eBiz Guide</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="faq.html"
+                      class="border_primary text_white"
+                      data-linktext="Q&A"
+                      >Q&A</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3 class="footer_tt">FAQ</h3>
+                <ul class="footer_sub_tt">
+                  <li>
+                    <a
+                      href="faq.html"
+                      class="border_primary text_white"
+                      data-linktext="faq"
+                      >faq</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="eBiz Contact Point"
+                      >eBiz Contact Point</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="eBiz Guide"
+                      >eBiz Guide</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="faq.html"
+                      class="border_primary text_white"
+                      data-linktext="Q&A"
+                      >Q&A</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3 class="footer_tt">contents</h3>
+                <ul class="footer_sub_tt">
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="office list"
+                      >office list</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="eBiz Contact Point"
+                      >eBiz Contact Point</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="eBiz Guide"
+                      >eBiz Guide</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="faq.html"
+                      class="border_primary text_white"
+                      data-linktext="Q&A"
+                      >Q&A</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3 class="footer_tt">contents</h3>
+                <ul class="footer_sub_tt">
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="office list"
+                      >office list</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="eBiz Contact Point"
+                      >eBiz Contact Point</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="border_primary text_white"
+                      data-linktext="eBiz Guide"
+                      >eBiz Guide</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="faq.html"
+                      class="border_primary text_white"
+                      data-linktext="Q&A"
+                      >Q&A</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer_info">
+          <p>
+            194 Yulgok-ro, Jongro-gu, Seoul, Korea Postal Code : 03127<br />
+            ⓒ 2022 Coral collie All Rights Reserved.
+          </p>
 
+          <div>
+            <select name="affilia_site" id="affilia_site">
+              <option selected="selected">affilia site</option>
+              <option value="http://www.uswut.com">
+                Washington United Terminals(WUT)
+              </option>
+              <option value="http://www.uicd.co.kr">의왕ICD</option>
+              <option value="http://www.hpnt.co.kr">
+                Hyundai Pusan New-Port Terminal (HPNT)
+              </option>
+            </select>
+            <a href=""><span class="material-symbols-rounded">android</span></a>
+            <a href=""><img src="img/apple_logo.png" alt="apple 다운로드" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFDVK0X24W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!----------cursor style------------>
+    <div id="cursor"></div>
 
-  gtag('config', 'G-FFDVK0X24W');
-</script>
+    <!----------script------------>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/fresco.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 
-</body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FFDVK0X24W"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-FFDVK0X24W');
+    </script>
+  </body>
 </html>

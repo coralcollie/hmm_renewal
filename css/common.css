@@ -173,12 +173,12 @@ h1,h2,h3,h4,h5,h6{
     font-size: calc(var(--body-fz)*0.75);
     float: right;
 }
-.top_links .account{
+.top_links .font_icon{
     color: var(--white);
     cursor: pointer;
 }
 
-/* ---------hamburger-button---------- */
+/* ----------hamburger-button---------- */
 .hamburger-button{
     display: flex;
 	align-items: center;
@@ -217,7 +217,6 @@ h1,h2,h3,h4,h5,h6{
   .hamburger-button:hover span:nth-child(3){
     left: 0;
     transform-origin: left center;
-    
   }
   
   .click span:nth-child(2){
@@ -232,7 +231,8 @@ h1,h2,h3,h4,h5,h6{
     transform-origin: left center;
   } 
 
-  /* button */
+
+  /*---------- button ----------*/
 .btn{
     background: var(--white);
     display: inline-block;
@@ -288,11 +288,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     justify-content: space-between;
 }
-/* .main_slide p .quick{
-    width: 570px;
-    display: flex;
-    justify-content: space-between;
-} */
+
 .normal.btn{
     height: 36px;
     border: 1px solid var(--black);
@@ -309,6 +305,51 @@ h1,h2,h3,h4,h5,h6{
 .btn:hover{
     color: var(--white);
 }
+
+form{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 81px;
+    background: var(--secondary-c);
+    z-index: 50;
+    display: none; 
+    /* search 버튼 폼하고 아이콘 나눠서 다시 만들기 */
+}
+.input-search.active{
+    display: block;
+}
+.input-search.active{
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18px;
+    position: absolute;
+    width: 50%;
+    height: 40px;
+}
+.top_links form .container{
+    position: relative;
+    height: 81px;
+}
+.btn-search{
+    position: absolute;
+    left: 88%;
+    top: 50%;
+    transform: translate(0,-25%);
+}
+.btn-search.on{
+    left: 20%;
+}
+.btn_close{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+
 /*
 LAYOUT
 */
